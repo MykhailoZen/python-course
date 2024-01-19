@@ -8,9 +8,9 @@
 def rectangle_area(x, y):
     """Calculation of the area of a rectangle"""
     length, width = x, y
-    area = (length * width)
+    area = length * width
     print("Rectangle area: {}".format(area))
-    return (area)
+    return area
 
 rectangle_area(4, 6)
 
