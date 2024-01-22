@@ -1,0 +1,4 @@
+length = 8
+width = 10
+area = length * width
+print (area)
