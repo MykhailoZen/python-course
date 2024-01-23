@@ -12,7 +12,7 @@ def input_positive_float(prompt=''):
             break
         except ValueError:
             print("Invalid input, only positive floats are allowed."),
-            prompt = "Please enter a positive integer: "
+            prompt = "Please enter a positive number: "
     return n
 
 def area(l,w):
