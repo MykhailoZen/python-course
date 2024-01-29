@@ -38,5 +38,6 @@ print(f'Length of the colors tuple is: {length_of_colors}')
 
 # Add the number 4 to the numbers set.
 numbers.add(4)
+
 # Create a new key-value pair in the person dictionary (with new 'name' and age).
 person['Sergiy'] = 18
