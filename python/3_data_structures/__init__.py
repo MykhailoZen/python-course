@@ -24,6 +24,12 @@ print(fruits)
 fruits.remove('potato')
 print(fruits)
 
+# checking if apple in fruits #1
+if 'apple' in fruits:
+    print("The fruits list contains 'apple'")
+
+
+# checking if apple n fruits #2
 
 def is_in_fruits(fruit):
     if fruit not in fruits:
