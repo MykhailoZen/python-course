@@ -10,4 +10,3 @@ fruits.remove('potato')
 print('apple' in fruits)
 numbers.add(4)
 person['Valera'] = 10
-print(person)
