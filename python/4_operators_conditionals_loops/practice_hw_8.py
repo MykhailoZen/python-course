@@ -13,6 +13,7 @@ def students_database():
         'Michael': 31,
         'Richard': 12
     }
+
     return students_names_and_grades
 
 
@@ -26,10 +27,11 @@ def search_students_and_grades(data=None, name_student=None):
             break
         else:
             result = False
-        count = count + 1
+        count += 1
     return result
 
 
+# Stop or continue works with program.
 def stop_or_continue_program(entered_value):
     # Continuing works with program.
     if entered_value == '':
@@ -39,6 +41,7 @@ def stop_or_continue_program(entered_value):
         print('Program is stopped...')
         return exit()
     else:
+        print('Incorrect input. Please try again...')
         return False
 
 
@@ -50,9 +53,9 @@ def main_program():
     if student_name == '':
         stop_or_continue_program(student_name)
     elif search_in_database:
-        search_student_name, student_grade = search_students_and_grades(database, name_student=student_name)
+        search_student_name, search_student_grade = search_in_database
         print('Request was performed successful...')
-        print(f'Result: Student name: {search_student_name}, Grade: {student_grade}')
+        print(f'Result -> Student name: {search_student_name}, Grade: {search_student_grade}')
 
         while True:
             continue_or_stop = input('If you want continue tap ENTER or enter \'Stop\' to stop program: ').lower()
