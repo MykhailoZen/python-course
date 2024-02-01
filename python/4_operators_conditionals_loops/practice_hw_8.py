@@ -20,7 +20,8 @@ def students_database():
 # Search students and grades in dictionary.
 def search_students_and_grades(data=None, name_student=None):
     count = 0
-    result = True
+    result = bool
+
     for name_student_key in data:
         if name_student_key == name_student:
             result = list(data.items())[count]
@@ -47,13 +48,15 @@ def stop_or_continue_program(entered_value):
 
 def main_program():
     database = students_database()
+
     student_name = input('Please enter student name: ')
     search_in_database = search_students_and_grades(database, name_student=student_name)
 
     if student_name == '':
         stop_or_continue_program(student_name)
-    elif search_in_database:
+    elif bool(search_in_database):
         search_student_name, search_student_grade = search_in_database
+
         print('Request was performed successful...')
         print(f'Result -> Student name: {search_student_name}, Grade: {search_student_grade}')
 
@@ -61,7 +64,7 @@ def main_program():
             continue_or_stop = input('If you want continue tap ENTER or enter \'Stop\' to stop program: ').lower()
             if stop_or_continue_program(continue_or_stop):
                 break
-    elif not search_in_database:
+    elif not bool(search_in_database):
         while True:
             continue_or_stop = input('Student was not found. Please entering another student name tap Enter or '
                                      'enter \'Stop\' to stop program: ').lower()
