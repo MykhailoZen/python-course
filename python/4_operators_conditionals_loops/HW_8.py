@@ -15,10 +15,10 @@ database = {
 
 while True:
     student_name = (input("Enter student's name: ")).capitalize()
-    if student_name.lower() == "stop":
+    if student_name == "Stop program":
         break
     elif student_name in database:
         print(f"Student {student_name} has {database[student_name]} points.")
         break
     else:
-        print(f"Student's name {student_name} is absent. Enter correct name or write: 'stop' if you want exit")
+        print(f"Student's name {student_name} is absent. Enter correct name or write: 'Stop program' if you want exit")
