@@ -9,7 +9,7 @@ def st_grade(name):
     for i in student_grade.keys():
         # Repeat entering the student's name in case of attempt does not successful
         if name not in student_grade.keys() and name != "Stop program":
-            name = input("This student doesn't exist. Please try again: ")
+            name = input("Such a name is not in the dictionary. Please try again: ")
         # Stop program manually
         elif name == "Stop program":
             print(" ")
