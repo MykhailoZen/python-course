@@ -1,0 +1,6 @@
+def rectangle_area(length, width):
+    area = length * width
+    print("The area of the rectangle is: ", area)
+
+#Example run
+rectangle_area(10, 50)
