@@ -9,4 +9,4 @@ while True:
         print(f"Student {user_input} has {students[user_input]} points")
         break
     else:
-        print(f"There is no student with name {user_input}.")
+        print(f"There is no student with name {user_input}. You can stop the program by typing 'Stop program'.")
