@@ -8,7 +8,7 @@ def find_student_points():
         # Prompt user to enter student's name or "Stop program" to end
         user_input = input("Enter student's name (type 'Stop program' to end): ")
 
-        if user_input.lower() == 'Stop program':
+        if user_input.lower() == 'stop program':
             print("Program stopped.")
             break
 
