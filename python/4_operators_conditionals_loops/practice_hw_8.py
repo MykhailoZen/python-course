@@ -23,10 +23,10 @@ def continue_program() -> bool:
 
 
 # Function for stop program.
-def stop_program(input_string: str):
-    if input_string.lower() == 'stop program':
+def stop_program(force_stop, input_string: str = ''):
+    if input_string.lower() == 'stop program' or force_stop:
         print('Program was stopped...')
-        return exit()
+        exit()
     else:
         return False
 
@@ -50,7 +50,7 @@ def main():
         empty_string = ''
 
         input_string = input('Enter student\'s name: ')
-        stop = stop_program(input_string)
+        stop = stop_program(False, input_string)
 
         if input_string != empty_string or stop:
             search_result = search_student(students_names_and_grades, input_string)
@@ -60,7 +60,7 @@ def main():
                 if continue_program():
                     continue
                 else:
-                    break
+                    stop_program(True)
             else:
                 continue
         else:
