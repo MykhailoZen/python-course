@@ -21,3 +21,4 @@ def find_student_points():
 
 
 find_student_points()
+
