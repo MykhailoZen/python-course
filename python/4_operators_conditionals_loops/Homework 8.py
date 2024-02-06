@@ -5,11 +5,10 @@ def find_student_points():
         if student_name.lower() == 'stop program':
             print("Program stopped.")
             break
-        if student_name in student_grades:
-            points = student_grades[student_name]
-            print("Student {} has {} points.".format(student_name, points))
+        points = student_grades.get(student_name, None)
+        if points is not None:
+            print(f"Student {student_name} has {points} points.")
         else:
             print("Student not found. Please enter another name.")
+
 find_student_points()
-
-
