@@ -1,0 +1,37 @@
+#Create a list named fruits with the following items: 'apple', 'banana', 'cherry', 'potato'.
+fruits = ['apple', 'banana', 'cherry', 'potato']
+#Create a tuple named colors with three colors of your choice.
+colors = ('red', 'blue', 'green')
+# Create a set named numbers with the numbers from 1 to 3.
+numbers = {1, 2, 3}
+#Create a dictionary named person with the following key-value pairs: 'name' and age.
+person = {'name': 'Andrii', 'age': 39}
+#Add 'grape' to the fruits list.
+fruits = ['apple', 'banana', 'cherry', 'potato']
+fruits.append('grape')
+#Remove 'potato' from the fruits list.
+fruits = ['apple', 'banana', 'cherry', 'potato', 'grape']
+fruits.remove('potato')
+#Check if 'apple' is in the fruits list and output the result.
+fruits = ['apple', 'banana', 'cherry', 'grape']
+
+if 'apple' in fruits:
+    print("Yes, 'apple' is in the fruits list.")
+else:
+    print("No, 'apple' is not in the fruits list.")
+
+#Calculate the length of the colors tuple and output it.
+colors = ('red', 'blue', 'green')
+length_of_colors = len(colors)
+>>> print(length_of_colors)
+3
+#Add the number 4 to the numbers set.
+numbers = {1, 2, 3}
+numbers.add(4)
+#Create a new key-value pair in the person dictionary (with new 'name' and age).
+person['name2'] = 'Roman'
+person['age2'] = 30
+
+>>> print(person)
+{'name': 'Andrii', 'age': 39, 'name2': 'Roman', 'age2': 30}
+>>>
