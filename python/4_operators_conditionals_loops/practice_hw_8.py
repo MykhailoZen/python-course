@@ -47,12 +47,10 @@ def main():
     }
 
     while True:
-        empty_string = ''
-
         input_string = input('Enter student\'s name: ')
         stop = stop_program(False, input_string)
 
-        if input_string != empty_string or stop:
+        if input_string.isalpha() or stop:
             search_result = search_student(students_names_and_grades, input_string)
             print(search_result[0])
 
