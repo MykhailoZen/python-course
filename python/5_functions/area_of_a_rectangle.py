@@ -17,8 +17,8 @@ def calculate_rectangle_area(length: float, width: float) -> float:
     return length * width
 
 
-print(f"Rectangle area is {calculate_rectangle_area(3.5, 10)}cm")
-print(f"Rectangle area is {calculate_rectangle_area(11, 7)}cm")
-print(f"Rectangle area is {calculate_rectangle_area(3, 5)}cm")
+print(f"Rectangle area is {calculate_rectangle_area(3.5, 10)}cm")  # expected 35.0cm
+print(f"Rectangle area is {calculate_rectangle_area(11, 7)}cm")  # expected 77cm
+print(f"Rectangle area is {calculate_rectangle_area(3, 5)}cm")  # expected 15cm
 
 
