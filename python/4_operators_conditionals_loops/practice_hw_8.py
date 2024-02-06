@@ -23,7 +23,7 @@ def continue_program() -> bool:
 
 
 # Function for stop program.
-def stop_program(input_string):
+def stop_program(input_string: str):
     if input_string.lower() == 'stop program':
         print('Program was stopped...')
         return exit()
