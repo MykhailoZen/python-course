@@ -22,10 +22,25 @@ hello_world()
 #  inputs and the expected output.
 
 def calculate_rectangle_area(length, width):
-    """Calculation of the area of a rectangle"""
-    area = abs(length * width)
-    return area
+    """Calculation of the area of a rectangle. The input must be digits (int, float) or the calculation will fail."""
+    if isinstance(length, (float, int)) and isinstance(width, (float, int)):
+        area = abs(length * width)
+        return area
+    elif type(length) == str or type(width) == str:
+        return "The function input must be numbers, not string."
+    else:
+        return "Please provide correct input data. The parameters passed to the function must be numbers."
 
 print(calculate_rectangle_area(4, 6))
-print(calculate_rectangle_area(66, 80))
+print(calculate_rectangle_area(66.5, 80))
+print(calculate_rectangle_area(66.5, 88.3))
+print(calculate_rectangle_area(66, 81.3))
 print(calculate_rectangle_area(5, -22))
+print(calculate_rectangle_area(-7, -23))
+print(calculate_rectangle_area(4, -18))
+print(calculate_rectangle_area("a", -22))
+print(calculate_rectangle_area(33, "b"))
+print(calculate_rectangle_area("c", "h"))
+print(calculate_rectangle_area([33, 20], (123, 43)))
+print(calculate_rectangle_area(12, (23, 14)))
+print(calculate_rectangle_area([17, 21], -4))
