@@ -24,7 +24,8 @@ hello_world()
 def calculate_rectangle_area(length, width):
     """Calculation of the area of a rectangle.
     The function takes two values (width and length) and returns the area of the rectangle.
-    The input must be digits (int, float) or the calculation will fail."""
+    The input must be digits (int, float) or the calculation will fail.
+    """
     if isinstance(length, (float, int)) and isinstance(width, (float, int)):
         area = abs(length * width)
         return area
