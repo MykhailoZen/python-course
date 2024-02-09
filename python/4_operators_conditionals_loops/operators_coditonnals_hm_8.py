@@ -40,4 +40,4 @@ def get_student_grades():
         else:
             print(f'We do not have {input_name} in student grades list. Please input another name! ')
 
-print(get_student_grades())
+get_student_grades()
