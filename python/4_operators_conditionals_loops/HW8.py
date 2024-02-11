@@ -11,6 +11,9 @@ def search_name():
         print("Student " + name + " has", str(students[name]) + " points")
     elif name == "Stop program":
         exit(0)
+    elif name == "":
+        print("Please try again.")
+        search_name()
     else:
         print(name + " is not in the list. Please try again.")
         search_name()
