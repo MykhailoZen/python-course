@@ -10,5 +10,5 @@ def calculate_rectangle_area(length, width): #function  calculate_rectangle_area
     return print (f"Area of the rectangle with sides {length} and {width} is {area}") # return result of function with additional test in "print"
 
 calculate_rectangle_area(4,5) # expected the area of the rectangle 20
-calculate_rectangle_area(3,1.5) # # expected the area of the rectangle 4.5
+calculate_rectangle_area(3,1.5) #  expected the area of the rectangle 4.5
 calculate_rectangle_area(1,10) # expected the area of the rectangle 10
