@@ -8,7 +8,7 @@ def calculate_rectangle_area(width, length):
     """
 
     # 1. Check the type of arguments
-    if isinstance(width, str):
+    if isinstance(width, (str,bool)):
         try:
             width = int(width)
         except ValueError:
@@ -17,10 +17,8 @@ def calculate_rectangle_area(width, length):
             except ValueError:
                 print("Invalid argument of width. Input a valid number!")
                 return None
-    if isinstance(width, bool):
-        width = int(width)
 
-    if isinstance(length, str):
+    if isinstance(length, (str, bool)):
         try:
             length = int(length)
         except ValueError:
@@ -29,8 +27,6 @@ def calculate_rectangle_area(width, length):
             except ValueError:
                 print("Invalid argument of length. Input a valid number!")
                 return None
-    if isinstance(length, bool):
-        length = int(length)
 
     # 2. Check the size of rectangle sides
     if width <= 0 or length <= 0:
