@@ -10,6 +10,8 @@ def calculate_rectangle_area(length, width):
     return length * width
 
 
+print_string()  # Test function print_string
+
 # Verify that function calculate_rectangle_area works and returns the correct values. Use a and b variables as sides
 a = 10
 b = 20
