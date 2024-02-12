@@ -1,3 +1,8 @@
+def greeting():
+    print("Hello world!")
+
+greeting()
+
 def calculate_rectangle_area(width, length):
     """
     Area of rectangle calculates by multiplication of width and length of rectangle
@@ -8,7 +13,7 @@ def calculate_rectangle_area(width, length):
     """
 
     # 1. Check the type of arguments
-    if isinstance(width, (str,bool)):
+    if isinstance(width, (str, bool)):
         try:
             width = int(width)
         except ValueError:
@@ -38,6 +43,7 @@ def calculate_rectangle_area(width, length):
     print("The area of rectangle - " + str(area))
 
     return area
+
 
 calculate_rectangle_area(4, 4)
 calculate_rectangle_area(4.0, 3)
