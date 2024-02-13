@@ -30,6 +30,7 @@ Test your function by calling it with various inputs and printing the results.
  """
 
 def calculate_rectangle_area(length,width):
+    '''its kind of a simple calculator that takes 2 arguments and multiplies them'''
     print (f"you entered lenght {length} and width {width}")
     area = length * width
     print ("calculating area and returning result")
@@ -39,4 +40,5 @@ def calculate_rectangle_area(length,width):
 print("result:", calculate_rectangle_area(3,4))
 print("result:", calculate_rectangle_area(8,4))
 print("result:", calculate_rectangle_area(33,44))
+print(calculate_rectangle_area.__doc__)
 
