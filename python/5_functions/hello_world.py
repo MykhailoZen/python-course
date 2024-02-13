@@ -6,6 +6,6 @@ def calculate_rectangle_area(length, width):
 
 hello_world()
 
-print("Area of rectangle:", calculate_rectangle_area(5, 4))
-print("Area of rectangle:", calculate_rectangle_area(3.5, 2.5))
-print("Area of rectangle:", calculate_rectangle_area(10, 7))
+print("Area of rectangle:", calculate_rectangle_area(12, 24))
+print("Area of rectangle:", calculate_rectangle_area(7.5, 8.5))
+print("Area of rectangle:", calculate_rectangle_area(11, 9))
