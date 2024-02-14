@@ -1,3 +1,13 @@
+# Practice:
+# Create a function that will work with files.
+# The function should have 3 arguments:
+# - File operation type (writing to a file, reading from a file, etc.).
+# - File path (The path to the file with which the operation will be performed).
+# - Content (optional argument).
+# The function must perform actions with the file. In the case of reading, the content of the file should be displayed to the user.
+# Add error handling (try to handle all common input errors).
+
+
 import os
 
 def file_operation(operation_type, file_path, content=None):
