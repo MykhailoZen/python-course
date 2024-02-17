@@ -16,16 +16,18 @@ def operation_with_file(
 
     if operation not in operations_list:
         raise ValueError(f"Invalid argument '{operation}'. Please choose some from {operations_list}")
+    if operation in {"w", "a"} and not content:
+        raise ValueError(f"Content can't be empty for this operation")
 
     try:
         with open(file_path, operation) as file:
             # Reading
             if operation == "r":
-                return file.read()
+                return print(file.read())
 
             # Writing / Appending
             if operation == "w" or operation == "a":
-                result = file.write(content + "\n")
+                result = file.write(str(content) + "\n")
                 return result
 
             # Creating of new file
