@@ -50,7 +50,7 @@ def operations_files(file_operation_type, file_path, *content):
         print("Program finished")
 
 
-a = operations_files('w','file_Kotiai_4.txt', '\ntext line 1'
+operations_files('r','file_Kotiai_4.txt', '\ntext line 1'
                       '\ntext line 2'
                       '\ntext line 3'
                       '\ntext line 4'
