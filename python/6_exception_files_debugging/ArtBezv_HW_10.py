@@ -8,6 +8,8 @@ def file_operation(operation_type, file_path):
             print("Invalid operation type. Supported type is 'read'.")
     except FileNotFoundError:
         print("File not found.")
+    except PermissionError:
+        print("Permission denied to access the file.")
 
 file_operation("read", file_location)
 
