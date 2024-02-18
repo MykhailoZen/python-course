@@ -32,11 +32,9 @@ def operations_files(file_operation_type, file_path, *content):
                 print("Content appended to the end of the test:")
                 my_file.write(*content)
             elif file_operation_type in lst_3:
-                with open(file_path, 'r') as reader:
-                    '''Reading the content of the file)'''
-                    f = reader.read()
-                    print("Text from the file:")
-                    print(f)
+                f = my_file.read()
+                print("Text from the file:")
+                print(f)
     except FileNotFoundError as no_file_error:
         '''Exception for the incorrect path'''
         print("File path is incorrect", no_file_error)
@@ -50,7 +48,7 @@ def operations_files(file_operation_type, file_path, *content):
         print("Program finished")
 
 
-operations_files('r','file_Kotiai_4.txt', '\ntext line 1'
+operations_files('w','file_Kotiai_4.txt', '\ntext line 1'
                       '\ntext line 2'
                       '\ntext line 3'
                       '\ntext line 4'
