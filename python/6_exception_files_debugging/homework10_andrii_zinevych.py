@@ -1,34 +1,65 @@
-def file_operation(operation_type, file_path, content=None):
+import os
+
+
+def perform_file_operation(operation_type, file_path, content=None):
     try:
-        if operation_type == 'read':
+        # Check operation type and perform corresponding action
+        if operation_type == "read":
+            if not os.path.exists(file_path):
+                raise FileNotFoundError("File '{}' not found.".format(file_path))
             with open(file_path, 'r') as file:
                 file_content = file.read()
                 print("File content:")
                 print(file_content)
-        elif operation_type == 'write':
+        elif operation_type == "write":
             with open(file_path, 'w') as file:
-                file.write(content)
-                print("Content has been written to the file.")
-        elif operation_type == 'append':
+                file.write(content + '\n')
+                print("Content '{}' successfully written to file.".format(content))
+        elif operation_type == "append":
             with open(file_path, 'a') as file:
-                file.write('\n' + content)
-                print("Content has been appended to the file.")
+                file.write(content + '\n')
+                print("Content '{}' successfully appended to file.".format(content))
+        elif operation_type == "delete":
+            if not os.path.exists(file_path):
+                raise FileNotFoundError("File '{}' not found.".format(file_path))
+            os.remove(file_path)
+            print("File '{}' successfully deleted.".format(file_path))
+        elif operation_type == "create":
+            if os.path.exists(file_path):
+                raise FileExistsError("File '{}' already exists.".format(file_path))
+            with open(file_path, 'w') as file:
+                if content:
+                    file.write(content + '\n')
+                print("File '{}' successfully created.".format(file_path))
         else:
-            print("Invalid operation type. Please choose 'read', 'write', or 'append'.")
-    except FileNotFoundError:
-        print("File not found. Please provide a valid file path.")
-    except PermissionError:
-        print("Permission denied. You do not have permission to access the file.")
+            raise ValueError("Invalid operation type: '{}'".format(operation_type))
+
+    except FileNotFoundError as e:
+        print("Error:", e)
+    except FileExistsError as e:
+        print("Error:", e)
+    except ValueError as e:
+        print("Error:", e)
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print("An unexpected error occurred:", e)
 
 
-# Example usage:
-operation_type = input("Enter the file operation type (read/write/append): ")
-file_path = input("Enter the file path: ")
+def main():
+    print("Current directory content:")
+    for item in os.listdir():
+        print(item)
 
-if operation_type in ['write', 'append']:
-    content = input("Enter the content: ")
-    file_operation(operation_type, file_path, content)
-else:
-    file_operation(operation_type, file_path)
+    operation_type = input("Enter file operation type (read/write/append/delete/create): ").strip().lower()
+    file_path = input("Enter file path: ").strip()
+
+    # Only ask for content if operation type is 'write', 'append', or 'create'
+    if operation_type in ["write", "append", "create"]:
+        content = input("Enter content to write/append to file (optional): ").strip()
+    else:
+        content = None
+
+    perform_file_operation(operation_type, file_path, content)
+
+
+if __name__ == "__main__":
+    main()
