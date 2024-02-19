@@ -30,6 +30,7 @@ def file_operator(operation_mode, file_path, content=''):
         elif operation_mode == 'append':
             with open(file_path, 'a') as appender:
                 appender.write(content + '\n')
+                print(f'Added new line to the {file_path}:\n')
         elif operation_mode == 'clear':
             with open(file_path, 'w') as clearer:
                 print (f'File "{file_path}" has been cleared successfully.')
