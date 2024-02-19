@@ -31,17 +31,17 @@ def file_operation(operation_type, file_path, content=None):
                 file.write(str(content) + '\n')
                 print("Content has been written to the file successfully.")
             else:
-                print('You do not specify the data to write to the file or something else went wrong.') # OK
+                print('You do not specify the data to write to the file or something else went wrong.')
     except ValueError as value_error:
-        print(f"{value_error}. Invalid operation type. Please choose 'r', 'r+', 'a+', 'w+', 'a', 'w', 'x'.") # OK
+        print(f"{value_error}. Invalid operation type. Please choose 'r', 'r+', 'a+', 'w+', 'a', 'w', 'x'.")
     except FileNotFoundError as fnf_error:
-        print(f"{fnf_error}. Please provide a valid file path.") # OK
+        print(f"{fnf_error}. Please provide a valid file path.")
     except PermissionError:
-        print("Permission denied. You don't have permission to perform this operation on the file.") # OK
+        print("Permission denied. You don't have permission to perform this operation on the file.")
     except FileExistsError as fileexisterror:
-        print(f'{fileexisterror}. Create a new file so as not to lose data in {file_path}.') # OK
+        print(f'{fileexisterror}. Create a new file so as not to lose data in {file_path}.')
     except OSError as ose_error:
-        print(f"OSError occurred: {ose_error}") # OK
+        print(f"OSError occurred: {ose_error}")
     except Exception as err:
         print(f"An error occurred: {err}")
 
@@ -63,21 +63,21 @@ if __name__ == "__main__":
     file_operation('x', 'example.txt', 'File was created!')
     file_operation('x', 'example_x.txt', 'File was created!')
 
-    # Error handling example - Invalid operation type: OK
+    # Error handling example - Invalid operation type (ValueError):
     file_operation('invalid', 'example.txt')
 
-    # Error handling example - Invalid data type to write to file: OK
+    # Error handling example - Invalid data type to write to file:
     file_operation('w', 'example.txt', None)
     file_operation('a', 'example.txt')
 
-    # Error handling example - Bad file descriptor: OK
+    # Error handling example - Bad file descriptor (OSError):
     file_operation('r', 10)
     file_operation('w', 11, 'Hello, world!')
     file_operation('a', 12, 'This is a new line.')
 
-    # Error handling example - FileNotFoundError: OK
+    # Error handling example - FileNotFoundError:
     file_operation('r', 'missing_file.txt')
 
-    # Error handling example - PermissionError: OK
+    # Error handling example - PermissionError:
     # Precondition: chmod ugo=r test_read-only_file.txt
     file_operation('w', 'test_read-only_file.txt', 'Hello, world!')
