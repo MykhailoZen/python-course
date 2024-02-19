@@ -12,7 +12,7 @@ def file_operator(operation_mode, file_path, content=''):
     This function will allow to read file, append some data to file, write new data to file or clear it
     For work, function requires 2 mandatory arguments 'operation_mode', 'file_path' and one optional argument - 'content'
     'operation_mode' -> program allow to use such modes: 'read', 'write', 'append', 'clear'
-    'file_path' -> path to a file to work. Be sure to type it in a wright way.
+    'file_path' -> path to a file to work. Be sure to type it in a right way.
     'content' -> some data to write or append to file
     """
     try:
