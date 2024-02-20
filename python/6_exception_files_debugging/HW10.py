@@ -1,13 +1,13 @@
-def files_operations(operation_type, file_path, *content):
+def files_operations(operation_type, file_path, content=''):
     """This function will execute different operations with file, e.g. writing, reading, appending, creating"""
     try:
         with open(file_path, operation_type) as my_file:
             if operation_type == 'w':
                 print('File has been overwritten.')
-                my_file.write(*content)
+                my_file.write(content)
             elif operation_type == 'a':
                 print('File has been updated.')
-                my_file.write(*content)
+                my_file.write('\n'+content)
             elif operation_type == 'r':
                 b = my_file.read()
                 print('File has the following content:')
@@ -23,7 +23,7 @@ def files_operations(operation_type, file_path, *content):
         print('Type error occurred:', type_error)
 
 
-files_operations('r', 'test_file.txt', "\nHello!I am your test file!Do your best!")
+files_operations('r', 'test_file.txt', "Hello!I am your test file!Do your best!")
 
 
 
