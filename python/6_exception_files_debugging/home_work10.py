@@ -1,14 +1,3 @@
-"""
-Create a function that will work with files.
-The function should have 3 arguments:
-
-File operation type (writing to a file, reading from a file, etc.).
-File path (The path to the file with which the operation will be performed).
-Content (optional argument).
-The function must perform actions with the file. In the case of reading, the content of the file should be displayed to
-the user.
-Add error handling (try to handle all common input errors).
-"""
 operation_input = ''
 file_name = ''
 content_needed = ['w', 'write', 'a', 'append']
@@ -51,7 +40,7 @@ def work_with_files(operation_type, file_path, content=None):
 print("The program allows you to read content of the file, or add some new data")
 file_operations = ["r", "read", "w", "write", "a", "append", "x", "create", "exit"]
 
-while operation_input not in file_operations or len(file_name) < 1:
+while True:
     operation_input = input("Please, select needed operation: \n"
                             "x/create - create file\n"
                             "r/read - to read the content of file \n"
@@ -62,9 +51,13 @@ while operation_input not in file_operations or len(file_name) < 1:
     if operation_input == "exit":
         print("Exit...")
         break
+    if operation_input not in file_operations:
+        print("Invalid operation.\n")
+        continue
     file_name = input("Please, provide file name: \n>>>")
     if len(file_name) < 1:
-        print("The file name can't be empty!")
+        print("The file name can't be empty!\n")
+        continue
     if operation_input in content_needed:
         content_to_write = input("What do you want to write to the file:\n>>>")
 
