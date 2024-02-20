@@ -1,22 +1,25 @@
-try:
-    new_file = open("Click_bate.txt", "a")
-    new_file.write(" cool story Bob")
-    new_file.close()
+def funny(file_type, file_path, content=None):
+    try:
+        if file_type == "write":
+            with open(file_path, "w") as file:
+                file.write(content)
+                print(content)
+                print("Cool story")
+        elif file_type == "read":
+            with open(file_path, "r") as file:
+                print(file.read())
+        else:
+            print("What a story?")
 
-    new_file = open("Click_bate.txt", "r")
-    print(new_file.read())
+    except FileNotFoundError:
+        print("Wrong name")
+    except Exception as e:
+        print(e)
+    else:
+        print("Correct name")
+    finally:
+        print("The End!")
 
-    new_file = open("Click_bate.txt", "w")
-    new_file.write("Not a cool story")
-    new_file.close()
 
-    new_file = open("Click_bate.txt", "R")  # put wrong name of the file or incorrect mode
-    print(new_file.read())
-except FileNotFoundError:
-    print("Wrong name")
-except Exception as e:
-    print(e)
-else:
-    print("Correct name")
-finally:
-    print("The End!")
+funny("write", "Click_bate.txt", "new content")
+
