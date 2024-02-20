@@ -7,7 +7,7 @@ def files_operations(operation_type, file_path, content=''):
                 my_file.write(content)
             elif operation_type == 'a':
                 print('File has been updated.')
-                my_file.write('\n'+content)
+                my_file.write(f'\n{content}')
             elif operation_type == 'r':
                 b = my_file.read()
                 print('File has the following content:')
