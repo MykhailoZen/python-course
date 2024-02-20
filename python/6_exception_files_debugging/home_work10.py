@@ -1,6 +1,3 @@
-operation_input = ''
-file_name = ''
-content_needed = ['w', 'write', 'a', 'append']
 content_to_write = None
 
 
@@ -41,7 +38,7 @@ print("The program allows you to read content of the file, or add some new data"
 file_operations = ["r", "read", "w", "write", "a", "append", "x", "create", "exit"]
 
 while True:
-    operation_input = input("Please, select needed operation: \n"
+    operation_input = input("\nPlease, select needed operation: \n"
                             "x/create - create file\n"
                             "r/read - to read the content of file \n"
                             "w/write - to write content"
@@ -52,13 +49,13 @@ while True:
         print("Exit...")
         break
     if operation_input not in file_operations:
-        print("Invalid operation.\n")
+        print("Invalid operation.")
         continue
     file_name = input("Please, provide file name: \n>>>")
     if len(file_name) < 1:
-        print("The file name can't be empty!\n")
+        print("The file name can't be empty!")
         continue
-    if operation_input in content_needed:
+    if operation_input in ['w', 'write', 'a', 'append']:
         content_to_write = input("What do you want to write to the file:\n>>>")
 
     work_with_files(operation_input, file_name, content_to_write)
