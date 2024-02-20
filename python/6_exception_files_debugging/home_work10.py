@@ -26,12 +26,14 @@ def work_with_files(operation_type, file_path, content=None):
             with open(file_path, 'a') as file:
                 content = file.write(content)
                 print("File saved...")
-    except FileNotFoundError as err1:
+    except FileNotFoundError:
         print(f"File not found... Please check if {file_path} exists")
-    except PermissionError as err2:
+    except PermissionError:
         print(f"Check access to {file_path}. Can't read/write the file...")
-    except FileExistsError as err3:
+    except FileExistsError:
         print(f"File {file_path} already exists")
+    except Exception as err4:
+        print("Error detected. Details: \n", err4)
 
 
 print("The program allows you to read content of the file, or add some new data")
