@@ -1,7 +1,6 @@
-# 1. Given a list of numbers, write a list comprehension that produces a copy of the list.
 import functools
 
-
+# 1. Given a list of numbers, write a list comprehension that produces a copy of the list.
 def copy_of_list(list):
     return [x for x in list]
 
