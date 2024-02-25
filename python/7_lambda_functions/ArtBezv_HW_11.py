@@ -1,4 +1,4 @@
-import operator, functools
+import functools
 
 #Task 1
 #Given a list of numbers, write a list comprehension that produces a copy of the list.
