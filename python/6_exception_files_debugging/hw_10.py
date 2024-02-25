@@ -13,8 +13,8 @@ def file_func(action, file_path, content=None):
                 pass
 
     except FileNotFoundError:
-        print("File not found")
+        print("File not found!")
     except PermissionError:
-        print('Permission denied!')
+        print("Permission denied!")
     except Exception as e:
         print(f"Something went wrong when opening the file! {e}")
