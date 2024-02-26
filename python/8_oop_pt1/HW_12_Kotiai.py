@@ -1,11 +1,9 @@
 '''1) Create the class "Zoo" with a protected list named "animals"'''
 
 class Zoo():
-    _animals = []
-    '''
-    def __init__(self, animals):
-        self.__animals = animals
-        '''
+    def __init__(self):
+        self._animals = []
+
     '''2.1 Method for adding elements to the list'''
     def add_elements(self, item):
         self._animals.append(item)
@@ -19,7 +17,6 @@ class Zoo():
     def __str__(self):
         return f'Final_list_of_animals: {" ".join(self._animals)}'
 
-'''player = Zoo(["dog", "cat", "wolf", "lion"])'''
 player = Zoo()
 player.add_elements('tiger')
 player.add_elements('cat')
@@ -31,81 +28,58 @@ player.add_elements('rhino')
 print(player)
 
 '''3.a Create class for Wolf. This class should have fields: name(str), id(int) and constructor'''
-class Wolf:
-    def __init__(self, name, id):
-        self._name = str(name)
-        self._id = int(id)
-    '''3.b Static method "play_sound()" which returns the string with the sound'''
-    def play_sound():
-        return "Roar"
-    '''c) Create method which represents the current class object as a string'''
-    def current_class(self):
-        return f'class {type(self).__name__}, name: {self._name} id {self._id}'
-
-print(Wolf.play_sound())
-wolf = Wolf("Alex_5", 5)
-print(wolf.current_class())
-
-'''3.a Create class for Lion. This class should have fields: name(str), id(int) and constructor'''
-class Lion:
+class Animal:
+    sound = "Roar"
     def __init__(self, name, id):
         self._name = name
         self._id = id
-    '''b) Static method "play_sound()" which returns the string with the sound'''
-    def play_sound():
-        return "Roar"
+    '''3.b Class method "play_sound()" which returns the string with the sound'''
+    @classmethod
+    def play_sound(cls):
+        return cls.sound
     '''c) Create method which represents the current class object as a string'''
     def current_class(self):
         return f'class {type(self).__name__}, name: {self._name} id {self._id}'
 
-print(Lion.play_sound())
-lion = Lion("Alex_4", 4)
-print(lion.current_class())
+'''3) Create classes for Wolf, Lion, Bioson, Parrtot, and Goose
 
-'''3.a Create class for Bison. This class should have fields: name(str), id(int) and constructor'''
-class Bison:
-    def __init__(self, name, id):
-        self._name = name
-        self._id = id
-    '''b) Static method "play_sound()" which returns the string with the sound'''
-    def play_sound():
-        return "Moo"
-    '''c) Create method which represents the current class object as a string'''
-    def current_class(self):
-        return f'class {type(self).__name__}, name: {self._name} id {self._id}'
+a) Each class should have fields: name(str), id(int) and constructor.
 
-print(Bison.play_sound())
-bison = Bison("Alex_3", 3)
-print(bison.current_class())
+b) Each class should have the method "play_sound()" which returns the 
+string with the sound of the animal (Use "Roar" for wolf and lion, "Moo" 
+for bison, and "honk" for goose and parrot). 
 
-'''3.a Create class for Parrot. This class should have fields: name(str), id(int) and constructor'''
-class Parrot:
-    def __init__(self, name, id):
-        self._name = name
-        self._id = id
-    '''b) Static method "play_sound()" which returns the string with the sound'''
-    def play_sound():
-        return "Honk"
-    '''c) Create method which represents the current class object as a string'''
-    def current_class(self):
-        return f'class {type(self).__name__}, name: {self._name} id {self._id}'
+c) Create method which represents the current class object as a string 
+e.g. output in print command should be like "class Lion name Alex id 2".'''
 
-print(Parrot.play_sound())
-parrot = Parrot("Alex_2", 2)
-print(parrot.current_class())
+class Wolf(Animal):
+    pass
+class Lion(Wolf):
+    pass
+class Bison(Animal):
+    sound = "Moo"
+class Parrot(Animal):
+    sound = "honk"
+class Goose(Parrot):
+    pass
 
-'''3.a Create class for Goose. This class should have fields: name(str), id(int) and constructor'''
-class Goose:
-    def __init__(self, name, id):
-        self._name = str(name)
-        self._id = int(id)
-    '''b) Static method "play_sound()" which returns the string with the sound'''
-    def play_sound():
-        return "Honk"
-    '''c) Create method which represents the current class object as a string'''
-    def current_class(self):
-        return f'class {type(self).__name__}, name: {self._name} id {self._id}'
+w = Wolf("Wolf_4", 4)
+print(w.play_sound())
+print(w.current_class())
 
-print(Goose.play_sound())
-goose = Goose("Alex_1", 1)
-print(goose.current_class())
+l = Lion("Lion_2", 2)
+print(l.play_sound())
+print(l.current_class())
+
+b = Bison("Bison_3", 3)
+print(b.play_sound())
+print(b.current_class())
+
+p = Parrot("Parrot_1", 1)
+print(p.play_sound())
+print(p.current_class())
+
+g = Goose("Goose_5", 5)
+print(g.play_sound())
+print(g.current_class())
+
