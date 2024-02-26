@@ -26,7 +26,7 @@ print(f"Practice point 4.2 \nsorted_list with function sort() (return changed li
 
 # 5. Given the list [1,2,3,4,5], calculate the multiplication result of all values using reduce() and a lambda function.
 list_of_numbers = [1, 2, 3, 4, 5]
-sum_numbers_in_list = reduce(lambda x, y: x + y, list_of_numbers)
+sum_numbers_in_list = reduce(lambda x, y: x * y, list_of_numbers)
 print(f"Practice point 5 \nsum_numbers_in_list: {sum_numbers_in_list}\n")
 
 # Bonus practice (15 points for each):
