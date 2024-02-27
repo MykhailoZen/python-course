@@ -1,3 +1,5 @@
+from functools import reduce
+
 # Given a list of numbers, write a list comprehension that produces a copy of the list
 original_list = [1, 2, 3, 4]
 copied_list = [item for item in original_list]
@@ -9,8 +11,13 @@ even_list = [item for item in range(1,11) if item % 2 == 0]
 list(filter(lambda x: x % 2 == 0, range(1,11)))
 
 #Given the list [("apple", 50), ("banana", 10), ("cherry", 30)], sort it by the number using the lambda function.
+given_list = [("apple", 50), ("banana", 10), ("cherry", 30)]
+sorted_list = sorted(given_list, key=lambda x: x[1])
 
 #Given the list [1, 2, 3, 4, 5], calculate the multiplication result of all values using functools.reduce() from the standard library and a lambda function.
+multi_list = [1, 2, 3, 4, 5]
+mult_result = reduce(lambda a, b: a * b, multi_list)
+
 
 #Given a list of lists (e.g. [[5, 4, 7], [8, 9, 6], [7, 2, 4]]), write a list comprehension that produces a single list of all items (e.g. [5, 4, 7, 8, 9, 6, 7, 2, 4]).
 
