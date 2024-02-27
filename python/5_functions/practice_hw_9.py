@@ -37,7 +37,7 @@ def calculate_rectangle_area(width_of_rectangle: Union[int, float],
         area = abs(width_of_rectangle * length_of_rectangle)
         return area
     else:
-        raise ValueError('Length and width of rectangle must be int or float.')
+        raise ValueError("Length and width of rectangle must be int or float.")
 
 
 print(f'The area is {calculate_rectangle_area(2, 3.2)}')
