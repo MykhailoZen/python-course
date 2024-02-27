@@ -12,7 +12,7 @@ print("Even numbers :", even_numbers_filter)
 # 4
 fruit_list = [("apple", 50), ("banana", 10), ("cherry", 30)]
 sorted_fruit_list = sorted(fruit_list, key=lambda fruit: fruit[1])
-print("Sorted fruits by number:", sorted_fruit_list)
+print("Sorted fruits :", sorted_fruit_list)
 # 5
 from functools import reduce
 num_list = [1, 2, 3, 4, 5]
@@ -25,4 +25,4 @@ print("One-dimensional list:", single_list)
 # 7
 original_dictionary = {'a': 1, 'b': 2, 'c': 3}
 inverted_dictionary = {value: key for key, value in original_dictionary.items()}
-print("Swapped keys and values:", inverted_dictionary)
+print("Inverted dictionary:", inverted_dictionary)
