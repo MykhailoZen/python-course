@@ -4,9 +4,9 @@ copied_list = [item for item in original_list]
 
 #Given a list of numbers (e.g. range(1, 11)), write a list comprehension that produces a list of only the even numbers.
 even_list = [item for item in range(1,11) if item % 2 == 0]
-print(even_list)
 
 #Solve the task above using filter() with a lambda function
+list(filter(lambda x: x % 2 == 0, range(1,11)))
 
 #Given the list [("apple", 50), ("banana", 10), ("cherry", 30)], sort it by the number using the lambda function.
 
