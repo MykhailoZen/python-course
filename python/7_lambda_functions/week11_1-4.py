@@ -4,18 +4,17 @@
 #Given a list of numbers, write a list comprehension that produces a copy of the list.
 
 list_1 = [1, 2, 3, 4, 5]
-list_copy = []
-for x in list_1:
-    list_copy.append(x)
+
+
+list_copy = [x for x in list_1]
 #print(list_copy)
 
 #Given a list of numbers (e.g. range(1, 11)), write a list comprehension that produces a list of only the even numbers.
 
 list_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11]
-list_even = []
-for y in list_2:
-    if y % 2 != True:
-        list_even.append(y)
+
+list_even = [y for y in list_2 if y % 2 != True]
+
 #print(list_even)
 
 #Solve the task above using filter() with a lambda function.
