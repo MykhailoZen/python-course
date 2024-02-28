@@ -27,7 +27,7 @@ print(f'Task 4. Result: {type(list_with_fruits)} -> {list_with_fruits}')
 # 5. Given the list [1, 2, 3, 4, 5], calculate the multiplication result of
 # all values using functools.reduce() from the standard library and a lambda function.
 list_of_numbers_task_5 = [1, 2, 3, 4, 5]
-calculate = reduce(lambda x, y: x + y, list_of_numbers_task_5)
+calculate = reduce(lambda x, y: x * y, list_of_numbers_task_5)
 print(f'Task 5. Result: {type(calculate)} -> {calculate}')
 
 # Bonus practice (15 points for each):
