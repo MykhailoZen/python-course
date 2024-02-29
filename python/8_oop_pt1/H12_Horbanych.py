@@ -78,7 +78,7 @@ class Goose:
         return f"class Goose name {self.name} id {self.id}"
 
 
-# Example Usage
+# For ran cod
 if __name__ == "__main__":
     zoo = Zoo()
 
