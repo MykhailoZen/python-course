@@ -15,6 +15,8 @@ print(new_list)
 # Solve the task above using filter() with a lambda function
 numbers_list3 = list(range(1, 11))
 new_list1 = list(filter(lambda num: num % 2 == 0, numbers_list3))
+new_list1 = list(filter(lambda num: not num % 2, numbers_list3))
+
 
 print(new_list1)
 
