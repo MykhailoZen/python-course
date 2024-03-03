@@ -108,7 +108,7 @@ if __name__ == "__main__":
     Zoo.add_animal('Crocodile')
     Zoo.add_animal('Tiger')
     print(Zoo.get_list_of_animals())
-
+    # Check ValueError
     Zoo.remove_animal('D')
     print(Zoo.get_list_of_animals())
 
