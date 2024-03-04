@@ -14,13 +14,17 @@ class Zoo:
     """Class for representing a zoo.
     This class is designed to store and manage a list of animals in a zoo.
     Attributes:
-        _animals (list): List of animals in the zoo.
+        _animals (list): Protected list of animals in the zoo.
     Methods:
-        add_animal(animal): Adds an animal to the zoo.
-        remove_animal(animal): Removes an animal from the zoo.
+        get_animal: Returns a list of animals (if in the future we need to work with a list of animals.).
+        add_animal: Adds an animal to the list.
+        remove_animal: Removes an animal from the zoo.
     """
     def __init__(self):
         self._animals = []
+
+    def get_animal(self):
+        return self._animals
 
     def add_animal(self, animal):
         try:
@@ -37,7 +41,7 @@ class Zoo:
             print(f"Error: {animal} - not found in the zoo.")
 
     def __str__(self):
-        return f"Zoo list contain: {self._animals}"
+        return f"<Zoo> with {len(self._animals)} animals: {self._animals}"
 
 
 class Animal:
@@ -48,6 +52,7 @@ class Animal:
         name (str): The name of the animal.
         id (int): The unique identifier of the animal.
     Class Attributes:
+        _sound: Define a variable in the parent class (None), will be redefined to be unique for child classes (str).
         _animal_count (int): A class-level counter to keep track of the number of animals created.
     Methods:
         __init__: Initializes an instance of the Animals class.
@@ -55,6 +60,7 @@ class Animal:
         __repr__: Returns a string representation of the animal suitable for debugging.
         play_sound: Returns a string representing the sound made by the animal.
     """
+    _sound = None
     _animal_count = 0
 
     def __init__(self, name):
@@ -69,30 +75,28 @@ class Animal:
         class_name = type(self).__name__
         return f" class {class_name}(name={self.name!r}, id={self.id!r})"
 
-    def play_sound(self, sound):
-        return f"{self.name} says {sound}"
+    def play_sound(self):
+        return f"{self.name} says {self._sound}"
 
 
 class Wolf(Animal):
-    def play_sound(self, sound="Roar"):
-        return super().play_sound(sound)
+    _sound = "Roar"
+
 
 class Lion(Animal):
-    def play_sound(self, sound="Roar"):
-        return super().play_sound(sound)
+    _sound = "Roar"
+
 
 class Bison(Animal):
-    def play_sound(self, sound="Moo"):
-        return super().play_sound(sound)
+    _sound = "Moo"
+
 
 class Parrot(Animal):
-    def play_sound(self, sound="Honk"):
-        return super().play_sound(sound)
+    _sound = "Honk"
+
 
 class Goose(Animal):
-    def play_sound(self, sound="Honk"):
-        return super().play_sound(sound)
-
+    _sound = "Honk"
 
 
 if __name__ == "__main__":
@@ -105,6 +109,8 @@ if __name__ == "__main__":
     animal1.add_animal("tiger")
     # Adding an incorrect element
     animal1.add_animal(10)
+    # Getting a list of animals
+    print(animal1.get_animal())
     # Removing a Present Element
     animal1.remove_animal("wolf")
     # Removing a missing element
