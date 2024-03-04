@@ -14,11 +14,22 @@ class Zoo:
     def __init__(self):
         self.__animals = []
 
-    def add_animal(self, animal):
-        if isinstance(animal, str):
+    @property
+    def animals(self):
+        return self.__animals
+
+    @animals.setter
+    def animals(self, animal):
+        try:
+            if not isinstance(animal, str):
+                raise ValueError("Value must be a string")
             self.__animals.append(animal)
-        else:
-            print(f"Error: {animal} - must be a string.")
+        except ValueError as err:
+            print(f"Error setting value: {err}")
+
+    @animals.deleter
+    def animals(self):
+        self.__animals.clear()
 
     def remove_animal(self, animal):
         try:
@@ -77,16 +88,22 @@ if __name__ == "__main__":
     # Creating an Instance of a Class
     animal1 = Zoo()
     # Adding a valid element
-    animal1.add_animal("wolf")
-    animal1.add_animal("tiger")
-    # Adding an incorrect element
-    animal1.add_animal(10)
+    animal1.animals = "Wolf"
+    animal1.animals = "Parrot"
+    animal1.animals = "Goat"
+    # Adding an incorrect element)
+    animal1.animals = 100
     # Removing a Present Element
-    animal1.remove_animal("wolf")
+    animal1.remove_animal("Wolf")
     # Removing a missing element
-    animal1.remove_animal("parrot")
+    animal1.remove_animal("Sheep")
+    # Remove all elements from the list using a deleter
+    del animal1.animals
     # Displaying the contents of a list
     print(animal1)
+
+
+    # print(animal1.animals)
 
     # Example usage classes Wolf, Lion, Bison, Parrot, and Goose:
     print("Example usage classes Wolf, Lion, Bison, Parrot, and Goose:")
