@@ -14,33 +14,33 @@ class Zoo:
     """Class for representing a zoo.
     This class is designed to store and manage a list of animals in a zoo.
     Attributes:
-        __animals (list): List of animals in the zoo.
+        _animals (list): List of animals in the zoo.
     Methods:
         add_animal(animal): Adds an animal to the zoo.
         remove_animal(animal): Removes an animal from the zoo.
     """
     def __init__(self):
-        self.__animals = []
+        self._animals = []
 
     def add_animal(self, animal):
         try:
             if not isinstance(animal, str):
                 raise ValueError("Value must be a string")
-            self.__animals.append(animal)
+            self._animals.append(animal)
         except ValueError as err:
             print(f"Error setting value: {err}")
 
     def remove_animal(self, animal):
         try:
-            self.__animals.remove(animal)
+            self._animals.remove(animal)
         except ValueError:
             print(f"Error: {animal} - not found in the zoo.")
 
     def __str__(self):
-        return f"Zoo list contain: {self.__animals}"
+        return f"Zoo list contain: {self._animals}"
 
 
-class Animals:
+class Animal:
     """
     A parent class representing animals.
     This class contains a constructor for creating instances of child classes.
@@ -48,19 +48,19 @@ class Animals:
         name (str): The name of the animal.
         id (int): The unique identifier of the animal.
     Class Attributes:
-        __animal_count (int): A class-level counter to keep track of the number of animals created.
+        _animal_count (int): A class-level counter to keep track of the number of animals created.
     Methods:
         __init__: Initializes an instance of the Animals class.
         __str__: Returns a string representation of the animal.
         __repr__: Returns a string representation of the animal suitable for debugging.
         play_sound: Returns a string representing the sound made by the animal.
     """
-    __animal_count = 0
+    _animal_count = 0
 
     def __init__(self, name):
         self.name = name
-        Animals.__animal_count += 1
-        self.id = Animals.__animal_count
+        Animal._animal_count += 1
+        self.id = Animal._animal_count
 
     def __str__(self):
         return f"{self.name} has id: {self.id}"
@@ -73,23 +73,23 @@ class Animals:
         return f"{self.name} says {sound}"
 
 
-class Wolf(Animals):
+class Wolf(Animal):
     def play_sound(self, sound="Roar"):
         return super().play_sound(sound)
 
-class Lion(Animals):
+class Lion(Animal):
     def play_sound(self, sound="Roar"):
         return super().play_sound(sound)
 
-class Bison(Animals):
+class Bison(Animal):
     def play_sound(self, sound="Moo"):
         return super().play_sound(sound)
 
-class Parrot(Animals):
+class Parrot(Animal):
     def play_sound(self, sound="Honk"):
         return super().play_sound(sound)
 
-class Goose(Animals):
+class Goose(Animal):
     def play_sound(self, sound="Honk"):
         return super().play_sound(sound)
 
