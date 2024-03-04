@@ -10,16 +10,16 @@
 #1 Task
 class Zoo:
     def __init__(self):
-        self.__animals = []
+        self._animals = []
 #2 Task
     def adding_animal(self, animal):
-        self.__animals.append(animal)
+        self._animals.append(animal)
 
     def removing_animal(self, animal):
-        self.__animals.remove(animal)
+        self._animals.remove(animal)
 
     def printing_animal(self):
-        for item in self.__animals:
+        for item in self._animals:
             print(item)
 
 #check
