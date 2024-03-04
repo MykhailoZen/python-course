@@ -11,10 +11,13 @@
 # be like "class Lion name Alex id 2".
 
 class Zoo:
-    """
-    The class contains a list to which we can add and remove animal names.
-    :param __animals: the list to which we add animals
-    :param animal: The name of the animal we are adding or removing from the list
+    """Class for representing a zoo.
+    This class is designed to store and manage a list of animals in a zoo.
+    Attributes:
+        __animals (list): List of animals in the zoo.
+    Methods:
+        add_animal(animal): Adds an animal to the zoo.
+        remove_animal(animal): Removes an animal from the zoo.
     """
     def __init__(self):
         self.__animals = []
@@ -39,9 +42,18 @@ class Zoo:
 
 class Animals:
     """
-    A parent class that contains a constructor for creating instances of child classes.
-    :param name: Animal name
-    :param id: unique animal identifier
+    A parent class representing animals.
+    This class contains a constructor for creating instances of child classes.
+    Attributes:
+        name (str): The name of the animal.
+        id (int): The unique identifier of the animal.
+    Class Attributes:
+        __animal_count (int): A class-level counter to keep track of the number of animals created.
+    Methods:
+        __init__: Initializes an instance of the Animals class.
+        __str__: Returns a string representation of the animal.
+        __repr__: Returns a string representation of the animal suitable for debugging.
+        play_sound: Returns a string representing the sound made by the animal.
     """
     __animal_count = 0
 
