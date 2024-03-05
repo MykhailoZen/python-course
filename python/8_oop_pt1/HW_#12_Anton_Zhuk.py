@@ -1,5 +1,5 @@
 class Zoo:
-    """Class Zoo has a protected list to named animals and add, extend, remove and get animals methods"""
+    """Class Zoo has a protected list to named animals and add, extend, remove, get and clear animals methods"""
 
     def __init__(self):
         self._animals = []
