@@ -73,6 +73,7 @@ class Goose(Animal):
         return "Honk!"
 
 
+# Uncomment below for testing
 # grey_wolf = Wolf("White Fang", 1)
 # young_goose = Goose("Woody", 2)
 # print(grey_wolf.play_sound())
@@ -83,6 +84,8 @@ class Goose(Animal):
 # print(our_zoo.list_animals)
 # our_zoo.remove_animal(young_goose)
 # print(our_zoo.list_animals)
+# grey_wolf2 = Wolf("White Fang2", 3)
+# our_zoo.remove_animal(grey_wolf2)
 
 
 
