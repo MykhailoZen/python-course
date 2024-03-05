@@ -26,93 +26,63 @@ class Zoo:
 
 
 class Wolf:
-    _class_name = 'Wolf'
-
     def __init__(self, id_animal: int, name_animal: str):
         self.name_animal = name_animal
         self.id_animal = id_animal
 
     def play_sound(self):
-        sound_of_animal = 'Roar'
-
-        return sound_of_animal
+        return 'Roar'
 
     def __str__(self):
-        class_object_as_a_string = f'class {self._class_name} name {self.name_animal} id {self.id_animal}'
-
-        return class_object_as_a_string
+        return f'class {self.__class__.__name__} name {self.name_animal} id {self.id_animal}'
 
 
 class Lion:
-    _class_name = 'Lion'
-
     def __init__(self, id_animal: int, name_animal: str):
         self.name_animal = name_animal
         self.id_animal = id_animal
 
     def play_sound(self):
-        sound_of_animal = 'Roar'
-
-        return sound_of_animal
+        return 'Roar'
 
     def __str__(self):
-        class_object_as_a_string = f'class {self._class_name} name {self.name_animal} id {self.id_animal}'
-
-        return class_object_as_a_string
+        return f'class {self.__class__.__name__} name {self.name_animal} id {self.id_animal}'
 
 
 class Bison:
-    _class_name = 'Bison'
-
     def __init__(self, id_animal: int, name_animal: str):
         self.name_animal = name_animal
         self.id_animal = id_animal
 
     def play_sound(self):
-        sound_of_animal = 'Moo'
-
-        return sound_of_animal
+        return 'Moo'
 
     def __str__(self):
-        class_object_as_a_string = f'class {self._class_name} name {self.name_animal} id {self.id_animal}'
-
-        return class_object_as_a_string
+        return f'class {self.__class__.__name__} name {self.name_animal} id {self.id_animal}'
 
 
 class Parrot:
-    _class_name = 'Parrot'
-
     def __init__(self, id_animal: int, name_animal: str):
         self.name_animal = name_animal
         self.id_animal = id_animal
 
     def play_sound(self):
-        sound_of_animal = 'honk'
-
-        return sound_of_animal
+        return 'honk'
 
     def __str__(self):
-        class_object_as_a_string = f'class {self._class_name} name {self.name_animal} id {self.id_animal}'
-
-        return class_object_as_a_string
+        return f'class {self.__class__.__name__} name {self.name_animal} id {self.id_animal}'
 
 
 class Goose:
-    _class_name = 'Goose'
-
     def __init__(self, id_animal: int, name_animal: str):
         self.name_animal = name_animal
         self.id_animal = id_animal
 
     def play_sound(self):
-        sound_of_animal = 'honk'
-
-        return sound_of_animal
+        return 'honk'
 
     def __str__(self):
-        class_object_as_a_string = f'class {self._class_name} name {self.name_animal} id {self.id_animal}'
-
-        return class_object_as_a_string
+        return f'class {self.__class__.__name__} name {self.name_animal} id {self.id_animal}'
 
 
 zoo = Zoo()
@@ -136,7 +106,7 @@ goose_animal = Goose(5, 'Nikita')
 zoo.extend_animals([wolf_animal, lion_animal, bison_animal, parrot_animal, goose_animal])
 
 for animal in zoo.get_animals():
-    print(f"{animal} - {animal.play_sound()}")
+    print(f'{animal} - {animal.play_sound()}')
 
 
 
