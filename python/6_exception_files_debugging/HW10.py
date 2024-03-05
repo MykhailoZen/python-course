@@ -34,9 +34,5 @@ def operation_with_file(
             if operation == "x":
                 pass
 
-    except FileNotFoundError:
-        return print(f"File not found: {file_path}")
-    except FileExistsError:
-        return print(f"File with same name is existing: {file_path}")
-    except Exception as e:
-        return print(f"An error occurred: {e}")
+    except (FileNotFoundError, FileExistsError, Exception) as exc:
+        return print(f"An error occurred: {exc!r}")
