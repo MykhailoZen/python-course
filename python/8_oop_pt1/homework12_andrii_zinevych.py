@@ -1,5 +1,5 @@
 class Zoo:
-    def __init__(self, name, id):
+    def __init__(self, name: str, id: int):
         self._animals = []
         self.name = name
         self.id = id
@@ -18,7 +18,7 @@ class Zoo:
 
 
 class Wolf:
-    def __init__(self, name, id):
+    def __init__(self, name: str, id: int):
         self.name = name
         self.id = id
 
@@ -30,7 +30,7 @@ class Wolf:
 
 
 class Lion:
-    def __init__(self, name, id):
+    def __init__(self, name: str, id: int):
         self.name = name
         self.id = id
 
@@ -42,7 +42,7 @@ class Lion:
 
 
 class Bison:
-    def __init__(self, name, id):
+    def __init__(self, name: str, id: int):
         self.name = name
         self.id = id
 
@@ -54,7 +54,7 @@ class Bison:
 
 
 class Parrot:
-    def __init__(self, name, id):
+    def __init__(self, name: str, id: int):
         self.name = name
         self.id = id
 
@@ -66,7 +66,7 @@ class Parrot:
 
 
 class Goose:
-    def __init__(self, name, id):
+    def __init__(self, name: str, id: int):
         self.name = name
         self.id = id
 
@@ -75,3 +75,4 @@ class Goose:
 
     def __str__(self):
         return f"class {self.__class__.__name__} name {self.name} id {self.id}"
+
