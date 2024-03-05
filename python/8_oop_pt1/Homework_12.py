@@ -38,11 +38,11 @@ class Goose(Animal):
 
 if __name__ == "__main__":
     zoo = Zoo()
-    wolf = Wolf("Wolfie", 1)
-    lion = Lion("Leo", 2)
-    bison = Bison("Billy", 3)
-    parrot = Parrot("Polly", 4)
-    goose = Goose("Gus", 5)
+    wolf = Wolf("Marty", 1)
+    lion = Lion("Alex", 2)
+    bison = Bison("Melman", 3)
+    parrot = Parrot("Gloria", 4)
+    goose = Goose("Skipper", 5)
 
     zoo.add_animal(wolf)
     zoo.add_animal(lion)
