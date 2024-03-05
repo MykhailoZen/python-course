@@ -20,27 +20,27 @@ class Animal:
 
 class Zoo(object):
     def __init__(self):
-        self._all_animals = []
+        self._animals = []
 
     def add_animal(self, *animal: Animal) -> None:
         for animal_to_add in animal:
             if isinstance(animal_to_add, Animal):
-                self._all_animals.append(animal_to_add)
+                self._animals.append(animal_to_add)
             else:
                 print("Please add only previously correctly added animals (with name and id, using appropriate class)")
 
     @property
     def list_animals(self):
-        if len(self._all_animals) == 0:
+        if len(self._animals) == 0:
             return "The zoo is empty"
         else:
-            return [animal_in_zoo.represent() for animal_in_zoo in self._all_animals]
+            return [animal_in_zoo.represent() for animal_in_zoo in self._animals]
 
     def remove_animal(self, *animals_to_remove: Animal) -> None:
         for animal_to_remove in animals_to_remove:
             if isinstance(animal_to_remove, Animal):
-                if animal_to_remove in self._all_animals:
-                    self._all_animals.remove(animal_to_remove)
+                if animal_to_remove in self._animals:
+                    self._animals.remove(animal_to_remove)
                     print(f"{animal_to_remove.animal_name} removed from the zoo.")
                 else:
                     print(f"{animal_to_remove.animal_name} not found in the zoo.")
@@ -86,7 +86,12 @@ class Goose(Animal):
 # print(our_zoo.list_animals)
 # grey_wolf2 = Wolf("White Fang2", 3)
 # our_zoo.remove_animal(grey_wolf2)
-
+# a = Parrot("Par", 4)
+# print(a.animal_id, a.animal_name, a.play_sound(), a.represent())
+# b = Bison("Bis", 5)
+# print(b.animal_id, b.animal_name, b.play_sound(), b.represent())
+# l = Lion("Simba", 6)
+# print(l.animal_id, l.animal_name, l.play_sound(), l.represent())
 
 
 
