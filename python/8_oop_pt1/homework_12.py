@@ -14,7 +14,7 @@ class Animal:
     def animal_id(self):
         return self._id
 
-    def play_sound(self) -> str:
+    def play_sound(self) -> str:  # the method will be defined in each class itself
         pass
 
 
@@ -73,17 +73,17 @@ class Goose(Animal):
         return "Honk!"
 
 
-grey_wolf = Wolf("White Fang", 1)
-young_goose = Goose("Woody", 2)
-print(grey_wolf.play_sound())
-print(young_goose.play_sound())
+# grey_wolf = Wolf("White Fang", 1)
+# young_goose = Goose("Woody", 2)
+# print(grey_wolf.play_sound())
+# print(young_goose.play_sound())
+# our_zoo = Zoo()
+# print(our_zoo.list_animals)
+# our_zoo.add_animal(grey_wolf, young_goose)
+# print(our_zoo.list_animals)
+# our_zoo.remove_animal(young_goose)
+# print(our_zoo.list_animals)
 
-our_zoo = Zoo()
-print(our_zoo.list_animals)
-our_zoo.add_animal(grey_wolf, young_goose)
-print(our_zoo.list_animals)
-our_zoo.remove_animal(young_goose)
-print(our_zoo.list_animals)
 
 
 
