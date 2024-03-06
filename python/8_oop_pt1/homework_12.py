@@ -18,7 +18,7 @@ class Animal:
         pass
 
 
-class Zoo(object):
+class Zoo:
     def __init__(self):
         self._animals = []
 
