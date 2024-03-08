@@ -70,6 +70,7 @@ print(average([("Alice", 85), ("Bob", 96), ("Charlie", 90), ("David", 105)]))
 # Solution 2
 def average_1(lst):
     scores = list(map(lambda x: x[1], lst))
+    '''Avoiding division by zero'''
     if len(scores) == 0:
         return 0
     return sum(scores) / len(lst)
