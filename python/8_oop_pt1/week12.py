@@ -3,6 +3,7 @@ class Zoo:
 
     def __init__(self):
         pass
+
     def show_list():
         return Zoo._animals
 
@@ -18,9 +19,8 @@ class Zoo:
 
 
 init_zoo = Zoo()
-#print(Zoo.show_list())
-#print(Zoo.add_animal("Cat"))
-#print(Zoo.show_list())
-print(Zoo.remove_animal("Lffffon"))
+# print(Zoo.show_list())
+# print(Zoo.add_animal("Cat"))
+# print(Zoo.show_list())
+#print(Zoo.remove_animal("Lion"))
 print(Zoo.show_list())
-
