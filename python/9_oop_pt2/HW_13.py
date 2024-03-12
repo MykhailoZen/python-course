@@ -16,23 +16,21 @@ class Zoo:
     Attributes:
         _animals (list): Protected list of animals in the zoo.
     Methods:
-        get_animal: Returns a list of animals (if in the future we need to work with a list of animals.).
+        get_animals: Returns a list of animals (if in the future we need to work with a list of animals.).
         add_animal: Adds an animal to the list.
         remove_animal: Removes an animal from the zoo.
     """
     def __init__(self):
         self._animals = []
 
-    def get_animal(self):
+    def get_animals(self):
         return self._animals
 
     def add_animal(self, animal):
-        try:
-            if not isinstance(animal, str):
-                raise ValueError("Value must be a string")
-            self._animals.append(animal)
-        except ValueError as err:
-            print(f"Error setting value: {err}")
+        if not isinstance(animal, Animal):
+            raise ValueError(f"{animal} not in a list of Animal, Exit")
+        self._animals.append(animal)
+
 
     def remove_animal(self, animal):
         try:
@@ -100,24 +98,6 @@ class Goose(Animal):
 
 
 if __name__ == "__main__":
-    # Example usage class Zoo:
-    print("Example usage class Zoo:")
-    # Creating an Instance of a Class
-    animal1 = Zoo()
-    # Adding a valid element
-    animal1.add_animal("wolf")
-    animal1.add_animal("tiger")
-    # Adding an incorrect element
-    animal1.add_animal(10)
-    # Getting a list of animals
-    print(animal1.get_animal())
-    # Removing a Present Element
-    animal1.remove_animal("wolf")
-    # Removing a missing element
-    animal1.remove_animal("parrot")
-    # Displaying the contents of a list
-    print(animal1)
-
     # Example usage classes Wolf, Lion, Bison, Parrot, and Goose:
     print("Example usage classes Wolf, Lion, Bison, Parrot, and Goose:")
     # Creating an Instance of a Class
@@ -136,3 +116,21 @@ if __name__ == "__main__":
     # method which represents the current class object as a string to the user
     print(str(yellow_lion))
     print(blue_bison)
+
+    # Example usage class Zoo:
+    print("Example usage class Zoo:")
+    # Creating an Instance of a Class
+    animal1 = Zoo()
+    # Adding a valid element
+    animal1.add_animal(gray_wolf)
+    animal1.add_animal(yellow_lion)
+    animal1.add_animal(blue_bison)
+    animal1.add_animal(white_goose)
+    # Getting a list of animals
+    print(animal1.get_animals())
+    # Removing a Present Element
+    animal1.remove_animal(gray_wolf)
+    # Removing a missing element
+    animal1.remove_animal(green_parrot)
+    # # Displaying the contents of a list
+    print(animal1)
