@@ -90,6 +90,8 @@ parrot_animal = Parrot(4, 'Oscar')
 goose_animal = Goose(5, 'Nikita')
 zoo.extend_animals([wolf_animal, lion_animal, bison_animal, parrot_animal, goose_animal])
 
+print(zoo.get_animals())
+
 counter = 0
 for animal in zoo.get_animals():
     counter += 1
