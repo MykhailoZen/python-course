@@ -46,3 +46,9 @@ class Parrot(Animal):
     def play_sound(self):
         return "Honk"
 
+
+class Goose(Animal):
+    def play_sound(self):
+        return "Honk"
+
+
