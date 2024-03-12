@@ -1,5 +1,4 @@
 class Zoo:
-
     def __init__(self):
         self._animals = []
 
@@ -27,30 +26,25 @@ class Animal:
 
 
 class Wolf(Animal):
-
     def play_sound(self) -> str:
         return 'Roar'
 
 
 class Lion(Animal):
-
     def play_sound(self) -> str:
         return 'Roar'
 
 
 class Bison(Animal):
-
     def play_sound(self) -> str:
         return 'Moo'
 
 
 class Parrot(Animal):
-
     def play_sound(self) -> str:
         return 'honk'
 
 
 class Goose(Animal):
-
     def play_sound(self) -> str:
         return 'honk'
