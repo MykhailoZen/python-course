@@ -65,8 +65,7 @@ class Zoo:
     def show_animals(self):
         if not self._animals:
             return f'There are no animals yet'
-        else:
-            return [x.whoami() for x in self._animals]
+        return [x.whoami() for x in self._animals]
 
     def add(self, *args):
         """
@@ -87,12 +86,12 @@ class Zoo:
             print(f'Removed animal {x} from Zoo list')
 
 
-zoo = Zoo()
-animal_1 = Lion('Alex', 10)
-animal_2 = Parrot('Bara', 12)
-animal_3 = Wolf('Lui', 11)
-animal_4 = Goose('Martin', 15)
-animal_5 = Bison('Bik', 18)
-zoo.add(animal_1, animal_2, animal_4, animal_5, animal_3)
-# zoo.remove(animal_1, animal_3, animal_4)
-print(zoo.show_animals())
+# zoo = Zoo()
+# animal_1 = Lion('Alex', 10)
+# animal_2 = Parrot('Bara', 12)
+# animal_3 = Wolf('Lui', 11)
+# animal_4 = Goose('Martin', 15)
+# animal_5 = Bison('Bik', 18)
+# zoo.add(animal_1, animal_2, animal_4, animal_5, animal_3)
+# # zoo.remove(animal_1, animal_3, animal_4)
+# print(zoo.show_animals())
