@@ -93,6 +93,8 @@ for animal in zoo._animals:
     print(animal)
 
 print()
+print()
+
 
 # Animal sounds
 
