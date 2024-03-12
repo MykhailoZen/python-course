@@ -31,37 +31,38 @@ class Animal:
         self.id_animal = id_animal
 
     def play_sound(self) -> str:
-        animal_sounds = {
-            'Wolf': 'Roar',
-            'Lion': 'Roar',
-            'Bison': 'Moo',
-            'Parrot': 'honk',
-            'Goose': 'honk'
-        }
-
-        return animal_sounds.get(self.__class__.__name__)
+        raise Exception(f'Sound for {self.name_animal} not implemented')
 
     def __str__(self) -> str:
         return f'class {self.__class__.__name__} name {self.name_animal} id {self.id_animal}'
 
 
 class Wolf(Animal):
-    pass
+    def play_sound(self) -> str:
+        return 'Roar'
 
 
 class Lion(Animal):
-    pass
+    def play_sound(self) -> str:
+        return 'Roar'
 
 
 class Bison(Animal):
-    pass
+    def play_sound(self) -> str:
+        return 'Moo'
 
 
 class Parrot(Animal):
-    pass
+    def play_sound(self) -> str:
+        return 'honk'
 
 
 class Goose(Animal):
+    def play_sound(self) -> str:
+        return 'honk'
+
+
+class Dog(Animal):
     pass
 
 
@@ -88,9 +89,8 @@ lion_animal = Lion(2, 'Alia')
 bison_animal = Bison(3, 'Tolik')
 parrot_animal = Parrot(4, 'Oscar')
 goose_animal = Goose(5, 'Nikita')
-zoo.extend_animals([wolf_animal, lion_animal, bison_animal, parrot_animal, goose_animal])
-
-print(zoo.get_animals())
+dog_animal = Dog(6, 'Richard')
+zoo.extend_animals([wolf_animal, lion_animal, bison_animal, parrot_animal, goose_animal, dog_animal])
 
 counter = 0
 for animal in zoo.get_animals():
