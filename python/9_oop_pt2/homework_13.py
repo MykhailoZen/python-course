@@ -18,8 +18,7 @@ class Animal:
         self.name = name
         self.unique_id = unique_id
 
-    @staticmethod
-    def play_sound() -> str:
+    def play_sound(self) -> str:
         return 'sound'
 
     def __str__(self):
@@ -28,30 +27,30 @@ class Animal:
 
 
 class Wolf(Animal):
-    @staticmethod
-    def play_sound() -> str:
+
+    def play_sound(self) -> str:
         return 'Roar'
 
 
 class Lion(Animal):
-    @staticmethod
-    def play_sound() -> str:
+
+    def play_sound(self) -> str:
         return 'Roar'
 
 
 class Bison(Animal):
-    @staticmethod
-    def play_sound() -> str:
+
+    def play_sound(self) -> str:
         return 'Moo'
 
 
 class Parrot(Animal):
-    @staticmethod
-    def play_sound() -> str:
+
+    def play_sound(self) -> str:
         return 'honk'
 
 
 class Goose(Animal):
-    @staticmethod
-    def play_sound() -> str:
+
+    def play_sound(self) -> str:
         return 'honk'
