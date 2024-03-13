@@ -26,12 +26,12 @@ class Zoo:
 
 
 class Animal:
-    def __init__(self, id_animal: int, name_animal: str) -> None:
+    def __init__(self, id_animal: int, name_animal: str):
         self.name_animal = name_animal
         self.id_animal = id_animal
 
     def play_sound(self) -> str:
-        raise Exception(f'Sound for {self.name_animal} not implemented')
+        raise Exception(f'Sound for {self.__class__.__name__} not implemented')
 
     def __str__(self) -> str:
         return f'class {self.__class__.__name__} name {self.name_animal} id {self.id_animal}'
@@ -63,6 +63,7 @@ class Goose(Animal):
 
 
 class Dog(Animal):
+    """A class for demonstrating an exception"""
     pass
 
 
