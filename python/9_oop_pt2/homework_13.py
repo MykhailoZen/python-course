@@ -13,12 +13,12 @@ class Zoo:
 
 
 class Animal:
-    def __init__(self, name: str, unique_id: int) -> None:
+    def __init__(self, name: str, unique_id: int):
         self.name = name
         self.unique_id = unique_id
 
     def play_sound(self) -> str:
-        return 'sound'
+        return 'this class does not have its own audio'
 
     def __str__(self):
         class_name = self.__class__.__name__
