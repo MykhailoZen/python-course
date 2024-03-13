@@ -11,21 +11,26 @@ class Zoo:
     def list_animals(self):
         return [str(animal) for animal in self._animals]
 
+
 class AnimalSonds:
     def make_sound(self):
         pass
+
 
 class RoarSound(AnimalSonds):
     def make_sound(self):
         return "Roar"
 
+
 class MooSound(AnimalSonds):
     def make_sound(self):
         return "Moo"
 
+
 class HonkSound(AnimalSonds):
     def make_sound(self):
         return "Honk"
+
 
 class Animal:
     def __init__(self, name, id, sound_behavior):
@@ -39,26 +44,32 @@ class Animal:
     def __str__(self):
         return f'{self.__class__.__name__}(name={self.name}, id={self.id})'
 
+
 # Specific animals
 class Wolf(Animal):
     def __init__(self, name, id):
         super().__init__(name, id, RoarSound())
 
+
 class Lion(Animal):
     def __init__(self, name, id):
         super().__init__(name, id, RoarSound())
+
 
 class Bison(Animal):
     def __init__(self, name, id):
         super().__init__(name, id, MooSound())
 
+
 class Parrot(Animal):
     def __init__(self, name, id):
         super().__init__(name, id, HonkSound())
 
+
 class Goose(Animal):
     def __init__(self, name, id):
         super().__init__(name, id, HonkSound())
+
 
 if __name__ == "__main__":
     zoo = Zoo()
