@@ -73,6 +73,10 @@ if __name__ == "__main__":
     parrot = Parrot('Сrow', 45654)
     goose = Goose('Baе', 45654)
 
+    print(wolf.name, wolf.animal_id)
+    print(lion.name, lion.animal_id)
+    print(goose.name, goose.animal_id)
+    print(parrot)
     # verification adding classes Wolf, Lion, Bison, Parrot, Goose
     zoo.add_animal(wolf)
     zoo.add_animal(lion)
@@ -81,12 +85,11 @@ if __name__ == "__main__":
     zoo.add_animal(parrot)
     zoo.add_animal(goose)
 
-    print("All list")
     print(zoo.get_list_of_animals())
     # verification removing
     zoo.remove_animal(lion)
-    print(f"All list after removing Saran")
-    print(zoo.get_list_of_animals())
+    print(f'All list after removing Saran - " {zoo.get_list_of_animals()} "')
+
 
     # verification removing not adding animal
     zoo.remove_animal(bison2)
