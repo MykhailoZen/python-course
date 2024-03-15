@@ -5,7 +5,7 @@ def check_empty_list(func):
     """Decorator to check if a list is empty."""
     def wrapper(list_of_value):
         if not list_of_value:
-            raise ValueError("List is is empty")
+            raise ValueError("List is empty")
         return func(list_of_value)
     return wrapper
 
@@ -96,4 +96,4 @@ def average_score_map(list_of_tuples):
     average = total_score / len(list_of_tuples)
     return average
 
-print(f"average score calculating with map is: \n{average_score_map(scores)}")
+print(f"average score calculated with map is: \n{average_score_map(scores)}")
