@@ -1,5 +1,6 @@
 from functools import reduce
-from math import factorial
+from math import factorial, prod
+from operator import mul
 
 def check_empty_list(func):
     """Decorator to check if a list is empty."""
@@ -63,6 +64,16 @@ def my_factorial_reduce(number):
     return reduce(lambda x, y: x * y, range(1, number + 1), 1)
 
 print(f"Calculating factorial number with reduce(): \n{my_factorial_reduce(number)}")
+
+def my_factorial_prod(number):
+    return prod(range(1, number + 1))
+
+print(f"Calculating factorial number with prod(): \n{my_factorial_prod(number)}")
+
+def my_factorial_reduce_mul(number):
+    return reduce(mul, range(1, number + 1), 1)
+
+print(f"Calculating factorial number with reduce() + mul(): \n{my_factorial_reduce_mul(number)}")
 
 # Capitalize the first letter of each word in a sentence "hello world, how are you?".
 phrase = "hello world, how are you?"
