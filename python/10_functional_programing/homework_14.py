@@ -16,10 +16,10 @@ def factorial(n):
 
 def capitalize_letter(string):
     """Capitalize the first letter of each word in a sentence"""
-    temp_list = string.split()
+    words_list = string.split()
     capitalized = []
-    for i in temp_list:
-        capitalized.append(i.capitalize())
+    for word in words_list:
+        capitalized.append(word.capitalize())
     return " ".join(capitalized)
 
 
@@ -31,11 +31,10 @@ def average_rating(students):
     return all_marks / len(students)
 
 
-list_to_calc = [10, 20, 30]
-print(calculate_square(list_to_calc))
-print(even_numbers(list_to_calc))
-print(factorial(12))
-
+list_to_calc = [10, 20, 13, 14, 15]
+print("Square of each number: ", calculate_square(list_to_calc))
+print("Even numbers: ", even_numbers(list_to_calc))
+print(factorial(5))
 print(capitalize_letter("hello world, how are you?"))
 scores = [("Alice", 85), ("Bob", 92), ("Charlie", 78), ("David", 95)]
-print(average_rating(scores))
+print("Average rating:", average_rating(scores))
