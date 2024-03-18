@@ -1,16 +1,4 @@
-class BaseCommand:
-
-    def add_animal(self, animal):
-        pass
-
-    def remove_animal(self, animal):
-        pass
-
-    def play_sound(self):
-        pass
-
-
-class Zoo(BaseCommand):
+class Zoo:
     def __init__(self):
         self._animals = []
 
@@ -34,12 +22,12 @@ class Animal:
         return f"Class {self.__class__.__name__} animal name {self.animal_name} animal id {self.animal_id} "
 
 
-class Wolf(BaseCommand, Animal):
+class Wolf(Animal):
     def play_sound(self):
         return "Roar"
 
 
-class Lion(BaseCommand, Animal):
+class Lion(Animal):
     def play_sound(self):
         return "Arrr"
 
@@ -48,9 +36,9 @@ zoo = Zoo()
 wolf = Wolf("Big bad Wolf", 1)
 lion = Lion("King", 2)
 
-
 zoo.add_animal(wolf)
 zoo.add_animal(lion)
+
 print(wolf)
 print(lion)
 
