@@ -23,13 +23,21 @@ def even_number(input_list: list):
 
 
 # 1 Write a function that calculates the factorial of a number using the functional approach.
-def factorial(n):
-    result_of_fuctorial = reduce(lambda x, y: x * y, range(1, n+1), 1)
-    return f'Factorial of "{n}" is "{result_of_fuctorial}"'
+def factorial(number):
+    """
+    :param number:
+    :return: calculates the factorial of a number
+    """
+    result_of_fuctorial = reduce(lambda x, y: x * y, range(1, number+1), 1)
+    return f'Factorial of "{number}" is "{result_of_fuctorial}"'
 
 
 # 2 Capitalize the first letter of each word in a sentence "hello world, how are you?".
 def capitalize(input_str: str):
+    """
+    :param input_str: str
+    :return: capitalize the first letter of each word in a sentence
+    """
     capitalize_str = input_str.title()
     return f'Capitalize the first letter of each word in a sentence: "{capitalize_str}"'
 
@@ -39,6 +47,10 @@ def capitalize(input_str: str):
 # Write a function that calculates the average score of the students in the list.
 # The function should take the list of tuples as input and return the average score.
 def avarage_of_student_score(input_tuple: tuple):
+    """
+    :param input_tuple: a list of students and their marks as tuples
+    :return: the average score
+    """
     list_of_avarage_of_score = [score[1] for score in input_tuple]
     result_of_avarage_of_score = sum(list_of_avarage_of_score)/len(list_of_avarage_of_score)
     return f'The average score "{result_of_avarage_of_score}"'
@@ -52,8 +64,8 @@ if __name__ == "__main__":
     print(even_number(a))
 
     # Verification the factorial of a number
-    number = 5
-    print(factorial(number))
+    n = 5
+    print(factorial(n))
 
     # Verification capitalize the first letter
     sentence = 'hello world, how are you?'
