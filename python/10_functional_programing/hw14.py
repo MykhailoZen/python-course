@@ -23,12 +23,11 @@ print(f"List contains only the even number: {even_numbers_list}")
 # 3 Optional. Given a list of students and their marks as tuples: scores = [("Alice", 85), ("Bob", 92), ("Charlie", 78), ("David", 95)]
 # Write a function that calculates the average score of the students in the list. The function should take the list of tuples as input and return the average score.
 
-def average_score(scores):
-    total = 0
-    quantity_students = len(scores)
+from functools import reduce
 
-    for student, score in scores: #unpacking of each turple elements and calculate total of each score
-        total += score
+def average_score(scores):
+    total = reduce(lambda accumulator, score_in_scores: accumulator + score_in_scores[1], scores, 0) #calculating total of score using fuction reduce() for turple elements with index [1]
+    quantity_students = len(scores)
 
     scores_avg = total / quantity_students
     return  scores_avg
