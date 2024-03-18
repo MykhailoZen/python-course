@@ -24,7 +24,7 @@ def calculate_factorial(x):
     return factorial(x)
 
 
-print(factorial(5))
+print(calculate_factorial(5))
 
 
 # Capitalize the first letter of each word in a sentence
