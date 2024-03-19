@@ -22,12 +22,9 @@ print(l2)
 
 # Write a function that calculates the factorial of a number using the functional approach.
 def factorial_list(num):
-    if num == 0:
-        return 1
-    else:
-        return num * math.factorial(num-1)
+    return math.factorial(num)
 
-l3 = factorial_list(9)
+l3 = factorial_list(10)
 print(l3)
 
 
