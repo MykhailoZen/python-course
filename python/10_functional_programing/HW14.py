@@ -36,11 +36,11 @@ print(capitalized_sentence)
 
 
 # Given a list of students and their marks as tuples:
-def avarage_students_score(scores):
+def average_students_score(scores):
     total_score = sum(score for _, score in scores)
     return total_score / len(scores)
 
 
 scores = [("Alice", 85), ("Bob", 92), ("Charlie", 78), ("David", 95)]
-average_score = avarage_students_score(scores)
+average_score = average_students_score(scores)
 print(f"The average score is: {average_score}")
