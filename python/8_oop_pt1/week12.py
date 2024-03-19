@@ -20,7 +20,7 @@ class Zoo:
 
 init_zoo = Zoo()
 # print(Zoo.show_list())
-# print(Zoo.add_animal("Cat"))
+print(Zoo.add_animal("Cat"))
 # print(Zoo.show_list())
-#print(Zoo.remove_animal("Lion"))
+Zoo.remove_animal("Lion")
 print(Zoo.show_list())
