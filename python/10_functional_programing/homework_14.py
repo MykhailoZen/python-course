@@ -17,3 +17,15 @@ def even_counter(list):
     return even_list
 
 print(even_counter(my_list))
+
+#Optional
+
+#Write a function that calculates the factorial of a number using the functional approach.
+
+def factorial_finder(num, factorial=1):
+    for i in range(2, num + 1):
+        factorial *= i
+    print(f"The factorial for number {num} is: ", factorial)
+
+factorial_finder(4)
+factorial_finder(5)
