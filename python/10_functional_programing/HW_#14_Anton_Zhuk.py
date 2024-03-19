@@ -40,7 +40,7 @@ def capitalize_the_first_letter_of_each_word(w_sentence):
     return w_sentence.title()
 
 
-print(f'Capitalize sentense: {capitalize_the_first_letter_of_each_word(sentence)}')
+print(f'Capitalize sentence: {capitalize_the_first_letter_of_each_word(sentence)}')
 
 # Given a list of students and their marks as tuples:
 # scores = [("Alice", 85), ("Bob", 92), ("Charlie", 78), ("David", 95)]
