@@ -29,3 +29,24 @@ def factorial_finder(num, factorial=1):
 
 factorial_finder(4)
 factorial_finder(5)
+
+# Capitalize the first letter of each word in a sentence "hello world, how are you?".
+
+my_string = "hello world, how are you?"
+new_list = []
+
+def word_capitalizer(string, list):
+    my_list = string.split(" ")
+    for item in my_list:
+        list.append(item.capitalize())
+    new_string = ' '.join(new_list)
+    return new_string
+
+print("String with capitalized words: ", word_capitalizer(my_string, new_list))
+
+# Variant #2
+
+def another_word_capitalizer(arg):
+    return arg.title()
+
+print("Another variant to capitalize words: ", another_word_capitalizer(my_string))
