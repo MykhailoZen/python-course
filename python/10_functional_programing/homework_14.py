@@ -50,3 +50,16 @@ def another_word_capitalizer(arg):
     return arg.title()
 
 print("Another variant to capitalize words: ", another_word_capitalizer(my_string))
+
+#Given a list of students and their marks as tuples:
+#scores = [("Alice", 85), ("Bob", 92), ("Charlie", 78), ("David", 95)]
+#Write a function that calculates the average score of the students in the list.
+# The function should take the list of tuples as input and return the average score.
+
+scores = [("Alice", 85), ("Bob", 92), ("Charlie", 78), ("David", 95)]
+
+def average_score(data):
+    score_list = [i[1] for i in data]
+    return (sum(score_list)) / len(score_list)
+
+print("Average score is: ", average_score(scores))
