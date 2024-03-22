@@ -83,3 +83,4 @@ if __name__ == "__main__":
     print(f'Fibonacci sequence for {num2}: {list_of_fibonacci2}')
     # Iterating through the iterator
     print_list_from_generator(list_of_fibonacci2)
+    
