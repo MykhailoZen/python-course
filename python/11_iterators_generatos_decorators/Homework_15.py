@@ -1,13 +1,12 @@
 import time
 
-
 def log_time(func):
     def wrapper(*args, **kwargs):
-        start = time.time()
+        start = time.monotonic()
         result = func(*args, **kwargs)
-        print(f"{func.__name__} took {time.time() - start} seconds.")
+        elapsed_time = time.monotonic() - start
+        print(f"{func.__name__} took {elapsed_time:.3f} seconds.")
         return result
-
     return wrapper
 
 
