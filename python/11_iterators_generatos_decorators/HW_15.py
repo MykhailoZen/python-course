@@ -33,9 +33,10 @@ def fibonacci_generator(stop=20):
     """
        Generates Fibonacci numbers up to the specified limit of iterations.
        Parameters:
-       - stop (int): The limit of iterations for generating Fibonacci numbers. Defaults to 20.
-       Yields:
-       int: The next Fibonacci number in the sequence.
+       - stop (int):
+       The limit of iterations for generating Fibonacci numbers. Defaults to 20.
+       - yield (int):
+       The next Fibonacci number in the sequence.
        """
     current, next = 0, 1
     for i in range(0, stop):
