@@ -3,8 +3,9 @@ import time
 def time_to_run(func):
     def wrapper(*args):
         start_time = time.time()
-        func(*args)
+        result = func(*args)
         print("Calculation took", time.time() - start_time, "time to run")
+        return result
     return wrapper
 
 @time_to_run
@@ -18,7 +19,7 @@ def fibonacci(input):
             c = a + b
             a = b
             b = c
-        print(b)
+        return b
 
-fibonacci(99)
+print(fibonacci(99))
 
