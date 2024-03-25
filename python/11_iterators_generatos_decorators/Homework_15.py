@@ -5,7 +5,7 @@ def log_time(func):
     def wrapper(*args, **kwargs):
         start = time.time()
         result = func(*args, **kwargs)
-        print(f"Function {func.__name__} took {time.time() - start} seconds to execute.")
+        print(f"{func.__name__} took {time.time() - start} seconds.")
         return result
 
     return wrapper
@@ -16,9 +16,6 @@ def test_function(n):
     return sum(range(n))
 
 
-test_function(1000000)
-
-
 def fibonacci_generator(limit):
     a, b = 0, 1
     while a <= limit:
@@ -26,5 +23,7 @@ def fibonacci_generator(limit):
         a, b = b, a + b
 
 
-for fib_number in fibonacci_generator(100):
-    print(fib_number)
+if __name__ == "__main__":
+    test_function(1000000)
+    for fib_number in fibonacci_generator(100):
+        print(fib_number)
