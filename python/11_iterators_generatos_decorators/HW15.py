@@ -32,6 +32,11 @@ def fibonacci():
         previous, current = current, previous + current
 
 
-f = list(islice(fibonacci(), 0, 15))
-print(f)
+f = iter(list(islice(fibonacci(), 0, 15)))
+
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
 
