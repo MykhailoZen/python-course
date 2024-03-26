@@ -10,11 +10,11 @@ def logger(func):
         print(f"Delta T = {t2 - t1}")
         return result
     return wrapper
+@logger
 def sleep(n):
     time.sleep(n)
     print("wake up after sleeping")
-check = logger(sleep)
-check(3)
+sleep(3)
 
 #1.2 Write a generator function that generates Fibonacci numbers up to a specified limit.
 def fibonacci_gen(limit, a=0, b=1):
