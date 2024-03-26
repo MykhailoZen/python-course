@@ -24,6 +24,7 @@ def test_function():
 
 
 def fibonacci(number):
+    """The function generates fibonacci numbers"""
     x, y = 0, 1
     count = 0
     while count < number:
