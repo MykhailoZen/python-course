@@ -3,7 +3,7 @@
 import time
 
 
-def measure_execution_time(func):
+def execution_time_decorator(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)
@@ -11,6 +11,7 @@ def measure_execution_time(func):
         execution_time = end_time - start_time
         print(f"Function {func.__name__} execution time: {execution_time:.4f} ")
         return result
+
     return wrapper
 
 
@@ -27,6 +28,7 @@ def fibonacci_generator(n):
 for i in fibonacci_generator(10):
     print(i)
 
+
 # Variant 2
 def fibonacci_generator():
     x, y = 0, 1
@@ -38,4 +40,3 @@ def fibonacci_generator():
 for i in fibonacci_generator():
     if i in range(10):
         print(i)
-
