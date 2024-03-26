@@ -7,7 +7,7 @@ def logger(func):
         result = func(*args, **kwargs)
         t2 = time.time()
         print("finish:", t2)
-        print(f"Delta T = {t1 - t2}")
+        print(f"Delta T = {t2 - t1}")
         return result
     return wrapper
 def sleep(n):
