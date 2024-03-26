@@ -33,6 +33,7 @@ def fibonacci_calc_generator(numbers_limit):
 #check
 numbers_limit = 15
 numb = fibonacci_calc_generator(numbers_limit)
+
 print(f"Fibonnaci numbers of {numbers_limit}:")
 for number in numb:
     print(number)
