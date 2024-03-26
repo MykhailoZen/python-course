@@ -31,7 +31,7 @@ def average_rating(students):
     return all_marks / len(students)
 
 
-list_to_calc = [10, 20, 13, 14, 15]
+list_to_calc = [2, 20, 13, 14, 15]
 print("Square of each number: ", calculate_square(list_to_calc))
 print("Even numbers: ", even_numbers(list_to_calc))
 print(factorial(5))
