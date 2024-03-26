@@ -17,6 +17,8 @@ def waste_time(seconds):
     time.sleep(seconds)
 
 
+# 1.2 Write a generator function that generates Fibonacci numbers up to a specified limit.
+
 def fibonate(num):
     a, b = 0, 1
     for i in range(num+1):
