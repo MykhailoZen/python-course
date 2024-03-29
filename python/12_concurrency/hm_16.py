@@ -5,7 +5,6 @@ import concurrent.futures
 # Create a function (e.g. "calculate_sum(start: int, end: int) -> int")
 # which returns the sum of numbers in the given range including both ends.
 def calculate_sum(start: int, end: int) -> int:
-
     list_of_result = [i for i in range(start, end + 1)]
     result = sum(list_of_result)
     return result
@@ -66,6 +65,6 @@ if __name__ == "__main__":
     print("Time spend calculate_sum_parallel:", time.time() - start)
 
     # Verification run sleep_random()
-    print("Run sleep random", sleep_random())
+    print("Function that sleeps for a random amount of time (<10 seconds)", sleep_random())
     # Verification run run_sleep_random()
-    print(run_sleep_random())
+    print("Function that calls the sleep_random() 20 times \n", run_sleep_random())
