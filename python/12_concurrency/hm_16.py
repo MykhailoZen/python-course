@@ -33,6 +33,8 @@ def sleep_random():
 
 # Create another function that calls the previous one 20 times using multiple threads in parallel
 # (e.g. use "concurrent.futures.ThreadPoolExecutor" class).
+# Print the "total workload" time (the sum of outputs from all calls) and the "max workload" time (the longest task).
+# Print the elapsed time. It should be several times smaller than the "workload" time.
 def run_sleep_random():
     start_time = time.time()
     total_workload_time = 0
@@ -64,6 +66,6 @@ if __name__ == "__main__":
     print("Time spend calculate_sum_parallel:", time.time() - start)
 
     # Verification run sleep_random()
-    print(sleep_random())
+    print("Run sleep random", sleep_random())
     # Verification run run_sleep_random()
     print(run_sleep_random())
