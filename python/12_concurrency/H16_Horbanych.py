@@ -76,7 +76,7 @@ def run_parallel_tasks():
 
     return workload_times
 
-#P rint the elapsed time. It should be several times smaller than the "workload" time.
+#Print the elapsed time. It should be several times smaller than the "workload" time.
 if __name__ == "__main__":
     start_time = time.time()
     workload_times = run_parallel_tasks()
