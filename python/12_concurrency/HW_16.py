@@ -27,7 +27,7 @@ def calculate_sum_parallel(start: int, end: int, chunk_size: int = 10000) -> int
 # Multithreading, IO-bound work (30 points):
 # Create a function that sleeps for a random amount of time (<10 seconds), prints and returns the sleep duration.
 
-def wast_time():
+def waste_time():
     sleep_time = random.uniform(1, 10)
     time.sleep(sleep_time)
     return sleep_time
@@ -38,15 +38,15 @@ def wast_time():
 # Print the elapsed time. It should be several times smaller than the "workload" time.
 # (optional) asyncio practice: Implement the multithreading task above using the asyncio approach.
 
-def parallel_wast_time():
+def parallel_waste_time():
     total_workload = 0
     max_workload = 0
 
     start_time = time.time()
     with concurrent.futures.ThreadPoolExecutor() as pool:
-        futures = [pool.submit(wast_time) for i in range(20)]
-
-        for future in concurrent.futures.as_completed(futures):
+        futures = [pool.submit(waste_time) for i in range(20)]
+        concurrent.futures.wait(futures)
+        for future in futures:
             sleep_time = future.result()
             total_workload += sleep_time
             max_workload = max(max_workload, sleep_time)
@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
 
     print("Example of Multithreading, IO-bound work:\n")
-    total_workload, max_workload, elapsed_time = parallel_wast_time()
+    total_workload, max_workload, elapsed_time = parallel_waste_time()
     print(f"Total workload (sum of results of all calls):\n{total_workload} sec")
     print(f"Maximum workload (longest task):\n{max_workload} sec")
     print(f"Total elapsed task execution time:\n{elapsed_time} sec")
