@@ -19,9 +19,9 @@ def calculate_sum(start: int, end: int) -> int:
 def calculate_sum_parallel(start: int, end: int, chunk_size: int = 10000) -> int:
     chunks = [(i, min(i + chunk_size - 1, end)) for i in range(start, end + 1, chunk_size)]
     with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
-        result_in_one_chunk = pool.starmap(calculate_sum, chunks)
+        result = pool.starmap(calculate_sum, chunks)
 
-    return sum(result_in_one_chunk)
+    return sum(result)
 
 
 # Multithreading, IO-bound work (30 points):
