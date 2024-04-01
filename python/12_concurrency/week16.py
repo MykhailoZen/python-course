@@ -18,7 +18,7 @@ def split_range_into_n_parts(range_start, range_end, num_parts):
     part_size = (range_end - range_start) // num_parts
     remainder = (range_end - range_start) % num_parts
 
-    # Initialize the start and end of the current part
+
     start = range_start
     end = range_start
 
