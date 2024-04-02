@@ -2,10 +2,6 @@ import time
 from multiprocessing import Pool
 from functools import wraps
 
-cpu_count = 4
-start_range = 1
-end_range = 2**30
-
 
 def measure_time(func):
     """The function can measure time taken by a function to execute"""
@@ -40,5 +36,8 @@ def calculate_multiple_cpu(start, end):
 
 
 if __name__ == "__main__":
+    cpu_count = 32
+    start_range = 1
+    end_range = 2 ** 30
     print(calculate_sum(start_range, end_range))
     print(calculate_multiple_cpu(start_range, end_range))
