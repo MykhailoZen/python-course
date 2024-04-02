@@ -9,34 +9,25 @@ num_parts = multiprocessing.cpu_count()
 def calculate_range_sum(range_start, range_end):
 
     res_1 = sum(range(range_start, range_end + 1))
-
-
     return res_1
 
 def split_range_into_n_parts(range_start, range_end, num_parts):
-    #start_time = time.time()
+
     part_size = (range_end - range_start) // num_parts
     remainder = (range_end - range_start) % num_parts
-
-
     start = range_start
     end = range_start
-
-    # Generate the ranges for each part
     ranges_split = []
-    for _ in range(num_parts):
-        # Adjust the end of the part based on the remainder
-        end += part_size + (1 if remainder > 0 else 0)
-        # Add the range to the list
-        ranges_split.append(range(start, end))
-        # Update the start for the next part
-        start = end
-        # Decrease the remainder
-        remainder -= 1
 
+    for _ in range(num_parts):
+        end += part_size + (1 if remainder > 0 else 0)
+        ranges_split.append(range(start, end))
+        start = end
+        remainder -= 1
     return ranges_split
 
 def process_data(item):
+
     return sum(item)
 
 def main_task(data_x):
@@ -48,16 +39,14 @@ def main_task(data_x):
 if __name__ == "__main__":
     start_time = time.time()
     range_sum = calculate_range_sum(range_start, range_end)
-    print("calculate_range_sum time", time.time() - start_time, "seconds")
-    print("calculate_range_sum sum", range_sum)
+    print("straight calc took", round(time.time() - start_time, 2), "seconds")
+    print("straight calc result:", range_sum, "\n")
 
     start_time = time.time()
     ranges_split = split_range_into_n_parts(range_start, range_end +1, num_parts)
-    #print(ranges_split)
-    print("split list took", time.time() - start_time, "seconds")
+    print("split list took", round(time.time() - start_time, 2), "seconds\n")
 
     start_time = time.time()
-
     result = main_task(ranges_split)
-    print("Result:", result)
-    print("split calc took", time.time() - start_time, "seconds")
+    print("split calc took", round(time.time() - start_time, 2), "seconds")
+    print("split calc result:", result)
