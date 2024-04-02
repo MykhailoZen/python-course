@@ -1,4 +1,4 @@
-#Multithreading, IO-bound work
+# Multithreading, IO-bound work
 import time
 import random
 from concurrent.futures import ThreadPoolExecutor
