@@ -8,7 +8,11 @@ import concurrent.futures
 # which returns the sum of numbers in the given range including both ends.
 
 def calculate_sum(start: int, end: int) -> int:
-
+    """
+    :param start: start of range
+    :param end: end of range
+    :return: sum of range
+    """
     res = 0
     for i in range(start, end+1):
         res += i
@@ -20,7 +24,11 @@ def calculate_sum(start: int, end: int) -> int:
 # Split the given range into chunks, obtain the result for each range chunk, and return the total sum.
 # The returning result should be the same as for the first function.
 def calculate_sum_parallel(start: int, end: int) -> int:
-
+    """
+    :param start: start of range
+    :param end: end of range
+    :return: sum of range
+    """
     num_chunks = multiprocessing.cpu_count()
     chunk_size = (end - start + 1) // num_chunks
     chunks = [(i, min(i + chunk_size - 1, end)) for i in range(start, end + 1, chunk_size)]
@@ -31,11 +39,18 @@ def calculate_sum_parallel(start: int, end: int) -> int:
     return sum(results)
 
 
+# Create a function that sleeps for a random amount of time (<10 seconds), prints and returns the sleep duration.
 def sleep_randomiser():
+
     sleep_dur = random.random() * 10
     time.sleep(sleep_dur)
     return sleep_dur
 
+
+# Create another function that calls the previous one 20 times using multiple threads in parallel
+# (e.g. use "concurrent.futures.ThreadPoolExecutor" class).
+# Print the "total workload" time (the sum of outputs from all calls) and the "max workload" time (the longest task).
+# Print the elapsed time. It should be several times smaller than the "workload" time.
 def sleep_parallel():
     workload_total = 0
     workload_max = 0
