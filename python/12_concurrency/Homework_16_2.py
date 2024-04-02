@@ -22,8 +22,8 @@ def execute_in_parallel():
 
 
 if __name__ == "__main__":
-    start_time = time.time()
+    start_time = time.monotonic()
     execute_in_parallel()
-    end_time = time.time()
+    end_time = time.monotonic()
     elapsed_time = end_time - start_time
     print(f"Elapsed time: {elapsed_time:.2f} seconds.")
