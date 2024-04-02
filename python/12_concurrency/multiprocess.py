@@ -1,6 +1,7 @@
 import time
 from multiprocessing import Pool
 from functools import wraps
+import os
 
 
 def measure_time(func):
@@ -28,8 +29,17 @@ def calculate_sum(start, end):
 @measure_time
 def calculate_multiple_cpu(start, end):
     """Function executes another function in parallel on the specified amount of CPUs"""
-    chunk_size = (end - start + 1) // cpu_count
-    ranges = [(start + i * chunk_size, start + (i + 1) * chunk_size - 1) for i in range(cpu_count)]
+    total_numbers = end - start + 1
+    chunk_size = total_numbers // cpu_count
+    remainder = total_numbers % cpu_count
+    ranges = []
+    current_start = start
+    for i in range(cpu_count):
+        chunk_end = current_start + chunk_size - 1
+        if i < remainder:
+            chunk_end += 1
+        ranges.append((current_start, chunk_end))
+        current_start = chunk_end + 1
     with Pool(processes=cpu_count) as pool:
         results = pool.starmap(calculate_sum, ranges)
     return sum(results)
