@@ -7,9 +7,9 @@ Run both functions for the range [1, 2**30], verify the result is 57646075284029
 Print the times it takes for each approach.
 """
 
-import multiprocessing
-import concurrent.futures
 import asyncio
+import concurrent.futures
+import multiprocessing
 import random
 import time
 
