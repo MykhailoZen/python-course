@@ -1,5 +1,5 @@
 repos:
-  - repo: python-course
+  - repo: local
     hooks:
       - id: isort
         name: isort
