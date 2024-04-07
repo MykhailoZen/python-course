@@ -19,7 +19,9 @@ fruits.sort(key=lambda fruit: fruit[1])
 # 5. Given the list [1, 2, 3, 4, 5], calculate the multiplication result of all values
 # using functools.reduce() from the standard library and a lambda function.
 multiplication_list = [1, 2, 3, 4, 5]
-result = functools.reduce(lambda acc, multiplicator: acc * multiplicator, multiplication_list, 1)
+result = functools.reduce(
+    lambda acc, multiplicator: acc * multiplicator, multiplication_list, 1
+)
 
 
 # Bonus practice (15 points for each):
@@ -30,5 +32,5 @@ l4 = [x for y in lol for x in y]
 
 # 2. Using a dict comprehension flip the dictionary (make keys from values and vice versa).
 # For example: {'a': 1, 'b': 2, 'c': 3} -> {1: 'a', 2: 'b', 3: 'c'}
-d = {'a': 1, 'b': 2, 'c': 3}
+d = {"a": 1, "b": 2, "c": 3}
 d2 = {a: b for b, a in d.items()}

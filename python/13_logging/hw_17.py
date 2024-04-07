@@ -1,8 +1,13 @@
+import logging
 import multiprocessing
 import queue
 import threading
 import time
 
+
+logging.basicConfig(
+    level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 my_queue = queue.Queue()
 
@@ -39,7 +44,7 @@ def time_execution_decorator(func):
             + f".{milliseconds:03d}"
         )
 
-        print(f"Time taken for execution: {time_formatted}")
+        logging.info(f"Time taken for execution: {time_formatted}")
 
     return timer
 
@@ -52,24 +57,28 @@ def calculate_sum(start_range, end_range):
 
 @time_execution_decorator
 def threading_calculated_sum():
-    print("Threading execution: ")
+    logging.info("Threading execution: ")
 
     threads = []
     for r in ranges:
         t = threading.Thread(target=calculate_sum, args=r)
         threads.append(t)
 
+    logging.debug(f"Number of threads created: {len(threads)}")
+
     for thread in threads:
+        logging.debug(f"Thread {thread.name} - Starting")
         thread.start()
 
     for thread in threads:
+        logging.debug(f"Thread {thread.name} - Joined")
         thread.join()
 
     total_sum = 0
     while not my_queue.empty():
         total_sum += my_queue.get()
 
-    print(total_sum)
+    logging.info(f"Result is: {total_sum}")
 
 
 # Create another function (e.g. "calculate_sum_parallel") that calls "calculate_sum"
@@ -79,28 +88,19 @@ def threading_calculated_sum():
 
 @time_execution_decorator
 def multiprocessing_calculated_sum():
-    print("Multiprocessing execution: ")
+    logging.info("Multiprocessing execution: ")
 
     with multiprocessing.Pool(processes=num_processes) as pool:
+        logging.debug(f"Pool state: {pool._state}")
+        logging.debug(f"Pool size: {pool.__dict__['_processes']}")
         results = pool.starmap(calculate_sum, ranges)
 
     total_sum = sum(results)
 
-    print(total_sum)
+    logging.info(f"Result is: {total_sum}")
 
 
 if __name__ == "__main__":
     threading_calculated_sum()
-    print("")
+    # print('')
     multiprocessing_calculated_sum()
-
-# The returning result should be the same as for the first function.
-# Run both functions for the range [1, 2**30], verify the result is 576460752840294400.
-# Print the times it takes for each approach.
-
-
-# Multithreading, IO-bound work (30 points):
-# Create a function that sleeps for a random amount of time (<10 seconds), prints and returns the sleep duration.
-# Create another function that calls the previous one 20 times using multiple threads in parallel (e.g. use "concurrent.futures.ThreadPoolExecutor" class).
-# Print the "total workload" time (the sum of outputs from all calls) and the "max workload" time (the longest task).
-# Print the elapsed time. It should be several times smaller than the "workload" time.

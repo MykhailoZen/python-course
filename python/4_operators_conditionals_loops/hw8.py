@@ -1,7 +1,18 @@
 from past.builtins import raw_input
 
-points = {'Alan': 68, 'Roslyn': 48, 'Bertha': 50, 'Sally': 95, 'Rachel': 11, 'John': 95, 'Derek': 82, 'Kevin': 34,
-          'Michael': 31, 'Richard': 12}
+
+points = {
+    "Alan": 68,
+    "Roslyn": 48,
+    "Bertha": 50,
+    "Sally": 95,
+    "Rachel": 11,
+    "John": 95,
+    "Derek": 82,
+    "Kevin": 34,
+    "Michael": 31,
+    "Richard": 12,
+}
 
 user_input = raw_input("Hi! Please write a student's name: ")
 
@@ -10,13 +21,13 @@ while user_input not in points.keys():
         print("Program stopped")
         break
     else:
-        user_input = raw_input("There is no such student. Please write a student's name: ")
+        user_input = raw_input(
+            "There is no such student. Please write a student's name: "
+        )
 else:
-    print("Student " + user_input + " has " + str(points[user_input]) + " points")
-
-
-
-
+    print(
+        "Student " + user_input + " has " + str(points[user_input]) + " points"
+    )
 
 
 # Create a program that will help to find out the student's points.

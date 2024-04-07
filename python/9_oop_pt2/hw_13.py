@@ -24,7 +24,9 @@ class Animal:
         self.name = name
 
     def get_info(self):
-        return f"Class {self.__class__.__name__} name: {self.name}, id: {self.id}"
+        return (
+            f"Class {self.__class__.__name__} name: {self.name}, id: {self.id}"
+        )
 
     @abstractmethod
     def play_sound(self):

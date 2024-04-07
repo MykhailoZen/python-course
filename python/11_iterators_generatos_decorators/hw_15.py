@@ -1,4 +1,6 @@
 import time
+
+
 # 1.1 Create a decorator that logs the time taken by a function to execute.
 
 
@@ -11,9 +13,13 @@ def time_execution_decorator(func):
         execution_time = end - start
         execution_time_milliseconds = end - start * 1000
         milliseconds = int(execution_time_milliseconds % 1000)
-        time_formatted = time.strftime('%H:%M:%S', time.gmtime(execution_time)) + f'.{milliseconds:03d}'
+        time_formatted = (
+            time.strftime("%H:%M:%S", time.gmtime(execution_time))
+            + f".{milliseconds:03d}"
+        )
 
-        print(f'Time taken for execution: {time_formatted}')
+        print(f"Time taken for execution: {time_formatted}")
+
     return timer
 
 
@@ -27,6 +33,7 @@ def time_execution_decorator(func):
 
 # 1.2 Write a generator function that generates Fibonacci numbers up to a specified limit.
 
+
 def fib_generator(limit):
     x, y = 0, 1
 
@@ -37,4 +44,3 @@ def fib_generator(limit):
 
 # for item in fib_generator(1025):
 #     print(item)
-

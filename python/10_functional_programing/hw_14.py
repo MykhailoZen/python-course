@@ -1,27 +1,30 @@
 from functools import reduce
 
+
 # Mandatory:
 # Write a function that takes a list of numbers as input and returns a new list containing the square of each number using the functional approach.
 num = [1, 5, 3, 6]
-squared_list = [x ** 2 for x in num]
+squared_list = [x**2 for x in num]
 # print(squared_list)
 
 # Write a function that takes a list of numbers as input and returns a new list containing only the even numbers.
 even_num = [x for x in num if x % 2 == 0]
 # print(even_num)
 
+
 # Optional:
 # Write a function that calculates the factorial of a number using the functional approach.
 def factorial(n):
-    return reduce(lambda a, b: a * b, range(1, n+1))
+    return reduce(lambda a, b: a * b, range(1, n + 1))
 
 
 # print(factorial(4))
 
+
 # Capitalize the first letter of each word in a sentence "hello world, how are you?".
 def capitalized_string(n):
-    result = [word.capitalize() for word in n.split(' ')]
-    return ' '.join(result)
+    result = [word.capitalize() for word in n.split(" ")]
+    return " ".join(result)
 
 
 # print(capitalized_string('hello world, how are you?'))
