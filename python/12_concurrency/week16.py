@@ -6,10 +6,12 @@ range_start = 1
 range_end = 2**30
 num_parts = multiprocessing.cpu_count()
 
+
 def calculate_range_sum(range_start, range_end):
 
     res_1 = sum(range(range_start, range_end + 1))
     return res_1
+
 
 def split_range_into_n_parts(range_start, range_end, num_parts):
 
@@ -26,15 +28,18 @@ def split_range_into_n_parts(range_start, range_end, num_parts):
         remainder -= 1
     return ranges_split
 
+
 def process_data(item):
 
     return sum(item)
+
 
 def main_task(data_x):
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_parts) as executor:
         futures = [executor.submit(process_data, item) for item in data_x]
         results = [future.result() for future in concurrent.futures.as_completed(futures)]
     return sum(results)
+
 
 if __name__ == "__main__":
     start_time = time.time()
@@ -43,7 +48,10 @@ if __name__ == "__main__":
     print("straight calc result:", range_sum, "\n")
 
     start_time = time.time()
-    ranges_split = split_range_into_n_parts(range_start, range_end +1, num_parts)
+    ranges_split = split_range_into_n_parts(
+        range_start,
+        range_end + 1,
+        num_parts)
     print("split list took", round(time.time() - start_time, 2), "seconds\n")
 
     start_time = time.time()
