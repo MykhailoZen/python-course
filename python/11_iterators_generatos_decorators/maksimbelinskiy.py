@@ -1,6 +1,7 @@
 import time
 
-def count_time_decorator(func):
+
+def count_time_decorator(func: object) -> object:
     def wrapper(*args, **kwargs):
         print("Starting execution")
         start_time = time.time()
@@ -8,6 +9,8 @@ def count_time_decorator(func):
         end_time = time.time()
         print("Execution time:", end_time - start_time)
         print("Finish execution")
+        return result
+
     return wrapper
 
 
@@ -20,9 +23,11 @@ def fibonacci(num):
         fib_1, fib_2 = fib_2, fib_1 + fib_2
         yield fib_2
 
+
 fib = fibonacci(20)
 for i in fib:
     print(i)
+
 
 @count_time_decorator
 def custom_sleep_function(num):
@@ -32,3 +37,8 @@ def custom_sleep_function(num):
 
 
 custom_sleep_function(10)
+
+print(
+    "fsdfmsdlkfmsdlkfmkldsmflsdkmflksdmfdslkfmlsdkflksdjflksdjlkfjdslkfjlkds",
+    "fjlsdjlfksdjlfkdsjflksdjflksdjflksdjlkfjdlksjflkfjlksdjfkldslkfdsjlkf",
+)
