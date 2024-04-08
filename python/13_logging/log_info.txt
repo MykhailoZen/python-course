@@ -1,0 +1,8 @@
+2024-04-08 12:24:19,965 - __main__ - INFO - Time spend calculate_sum: 1712568258.9649322
+2024-04-08 12:24:19,966 - __main__ - INFO - Returns the sum of numbers from 1 to 1073741824 = 576460752840294400
+2024-04-08 12:24:36,479 - __main__ - INFO - Time spend calculate_sum_parallel: 16.51259684562683
+2024-04-08 12:24:36,479 - __main__ - INFO - Returns the sum of numbers in a parallel manner from 1 to 1073741824 = 576460752840294400
+2024-04-08 12:24:39,856 - __main__ - INFO - Result of sleep_random = 3.3741239099992892
+2024-04-08 12:24:51,279 - __main__ - INFO - Total workload time: 111.81 seconds
+2024-04-08 12:24:51,279 - __main__ - INFO - Max workload time: 9.69 seconds
+2024-04-08 12:24:51,279 - __main__ - INFO - Elapsed time: 11.42 seconds
