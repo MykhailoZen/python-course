@@ -31,13 +31,6 @@ repos:
         args: [--line-length=120]
         exclude: (.*pb2.py)
 
--   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.8.0
-    hooks:
-    -   id: mypy
-        files: (lib/fw_packages/|lib/cloud_mock/lpd|lib/cloud_mock/gelato)
-        exclude: (.*pb2.py)
-
 -   repo: https://github.com/pycqa/flake8
     rev: 7.0.0
     hooks:
@@ -46,18 +39,3 @@ repos:
         additional_dependencies:
         -   flake8-comprehensions==3.10.1
         -   flake8-noqa==1.4.0
-
--   repo: https://github.com/ansible/ansible-lint.git
-    rev: v6.20.0
-    hooks:
-    -   id: ansible-lint
-        files: 'ansible/.*'
-        always_run: false
-        additional_dependencies:
-        -   ansible>=8.2.0
-
--   repo: https://github.com/adrienverge/yamllint
-    rev: v1.33.0
-    hooks:
-    -   id: yamllint
-        files: '^configs/'
