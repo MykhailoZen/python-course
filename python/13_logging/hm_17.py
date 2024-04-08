@@ -36,7 +36,7 @@ def calculate_sum_parallel(start: int, end: int, chunk_size: int = 1000000) -> i
 def sleep_random():
     sleep_duration = random.uniform(0, 10)
     time.sleep(sleep_duration)
-    log.debug(f"Sleep duration = {sleep_duration}")
+    log.debug(f"Sleep duration = {sleep_duration:.2f} seconds")
     return sleep_duration
 
 
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     log.debug(f"Start calculation of calculate_sum with parameters: start = {start}, end = {end}")  # noqa: LOG011
     result = calculate_sum(start, end)
     time_result = time.time() - start
-    log.info(f"Time spend calculate_sum: {time_result}")
+    log.info(f"Time spend calculate_sum: {time_result:.2f} seconds")
     log.info(f"Returns the sum of numbers from {start} to {end} = {result}")  # noqa: LOG011
     log.debug("Calculate_sum completed")
 
@@ -79,14 +79,14 @@ if __name__ == "__main__":
     log.debug("Call calculate_sum_paralle")
     sum_result = calculate_sum_parallel(start, end)
     time_result = time.time() - start_time
-    log.info(f"Time spend calculate_sum_parallel: {time_result}")
+    log.info(f"Time spend calculate_sum_parallel: {time_result:.2f} seconds")
     log.info(f"Returns the sum of numbers in a parallel manner from {start} to {end} = {sum_result}")  # noqa: LOG011
     log.debug("Calculate_sum_paralle completed")
 
     # Verification run sleep_random()
     log.debug("Call sleep_random")
     result_sleep = sleep_random()
-    log.info(f"Result of sleep_random = {result_sleep}")
+    log.info(f"Result of sleep_random = {result_sleep:.2f} seconds")
     log.debug("Sleep_random completed")
 
     # Verification run run_sleep_random()
