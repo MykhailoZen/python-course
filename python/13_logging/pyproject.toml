@@ -1,0 +1,6 @@
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+
+[tool.isort]
+line_length = 88
