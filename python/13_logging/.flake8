@@ -1,0 +1,5 @@
+[flake8]
+max-doc-length = 72
+max-line-length = 79
+exclude = .git, __pycache__, venv, __init__.py
+ignore = E203, E266, W503

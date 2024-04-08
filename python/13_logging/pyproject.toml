@@ -1,0 +1,9 @@
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+
+[tool.isort]
+profile = 'black'
+line_length = 79
+lines_after_imports = 2
+skip = '__init__.py'
