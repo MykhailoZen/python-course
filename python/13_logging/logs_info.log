@@ -1,6 +1,0 @@
-
-2024-04-09 13:12:38,812 - INFO - Calculation without multiprocessing takes 8.364 seconds
-2024-04-09 13:12:40,013 - INFO - Calculation with multiprocessing takes 1.201 seconds
-2024-04-09 13:12:47,018 - INFO - Random sleep time function takes 7 seconds
-2024-04-09 13:13:00,035 - INFO - Total workload time of all threads 122 seconds, max workload time 10 seconds
-2024-04-09 13:13:00,036 - INFO - Function elapsed duration with threads 13.017 seconds

@@ -1,18 +1,19 @@
-import multiprocessing
-import time
-import random
 import concurrent.futures
 import logging
+import multiprocessing
+import random
+import time
 
-
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-# logger2 = logging.getLogger()
-# logger2.setLevel(logging.INFO)
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-file_handler = logging.FileHandler('logs_info.log')
+logging.basicConfig(
+    level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s'
+)
+formatter = logging.Formatter('%(asctime)s  %(levelname)s  %(message)s')
+file_handler = logging.FileHandler('logs_info.log', mode='w')
 file_handler.setLevel(logging.INFO)
 file_handler.setFormatter(formatter)
 logging.getLogger().addHandler(file_handler)
+
+
 def calculate_sum(start: int, end: int) -> int:
     """
     Function returns the sum of numbers in the given range including both ends
@@ -20,12 +21,13 @@ def calculate_sum(start: int, end: int) -> int:
     :param end: end of numbers range
     :return: sum of numbers is range
     """
-    return sum(range(start, end+1))
+    return sum(range(start, end + 1))
 
 
 def calculate_sum_parallel(start: int, end: int, n: int = 50000) -> int:
     """
-    Function returns the sum of numbers in the given range including both ends in a parallel manner
+    Function returns the sum of numbers in the given range
+    including both ends in a parallel manner
     :param start: start of numbers range
     :param end: end of numbers range
     :param n: size of chunk, default = 50000
@@ -50,7 +52,8 @@ def sleep_time() -> int:
 
 def threads_sleep_time():
     """
-    Function that calls the sleep_time function 20 times using multiple threads in parallel.
+    Function that calls the sleep_time function 20 times
+    using multiple threads in parallel.
     Prints the sum of outputs from all calls and the time of longest task.
     """
     total_workload = 0
@@ -63,29 +66,34 @@ def threads_sleep_time():
             total_workload += time_sleep
             max_workload = max(max_workload, time_sleep)
 
-    logging.info(f'Total workload time of all threads {total_workload} seconds, max workload time {max_workload} seconds')
+    logging.info(
+        f'Total workload time of all threads {total_workload} seconds, '
+        f'max workload time {max_workload} seconds'
+    )
 
 
 if __name__ == '__main__':
     start_time = time.time()
-    calculate_sum(1, 2 ** 30)
+    logging.debug('Starting calculating time')
+    calculate_sum(1, 2**30)
+    logging.debug('Ending calculating time')
     duration = time.time() - start_time
-    logging.info(f'Calculation without multiprocessing takes {duration:.3f} seconds')
+    logging.info(
+        f'Calculation without multiprocessing takes {duration:.3f} seconds'
+    )
 
     start_time = time.time()
-    calculate_sum_parallel(1, 2 ** 30)
+    calculate_sum_parallel(1, 2**30)
     duration = time.time() - start_time
-    logging.info(f'Calculation with multiprocessing takes {duration:.3f} seconds')
+    logging.info(
+        f'Calculation with multiprocessing takes {duration:.3f} seconds'
+    )
 
     logging.info(f'Random sleep time function takes {sleep_time()} seconds')
 
     start_time = time.time()
     threads_sleep_time()
-    elapsed_duration = time.time() - start_time
-    logging.info(f'Function elapsed duration with threads {elapsed_duration:.3f} seconds')
-
-    # logging.debug('This is a debug message')
-    # logging.info('This is an info message')
-    # logging.warning('This is a warning message')
-    # logging.error('This is an error message')
-    # logging.critical('This is a critical message')
+    elap_duration = time.time() - start_time
+    logging.info(
+        f'Function elapsed duration with threads {elap_duration:.3f} seconds'
+    )
