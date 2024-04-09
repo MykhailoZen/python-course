@@ -4,7 +4,6 @@ import random
 import logging
 from concurrent.futures import ThreadPoolExecutor
 
-# Configure logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[logging.FileHandler("concurrency.log", mode='w'),
