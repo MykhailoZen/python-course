@@ -10,5 +10,3 @@ while True:
         print('Student ' + item + ' has: ' + str(dict[item]) + ' points')
     else:
         print(" Student not found. Enter another name: ")
-
-

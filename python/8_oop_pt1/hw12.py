@@ -18,8 +18,13 @@ class Wolf:
         self.name = name
         self.id = id
 
+
+
     def play_sound(self):
             print("Roar")
+
+
+
 
     def representing_method(self):
         print(f"Current class:{self.__class__.__name__}, Name: {self.name}, Id: {self.id}")
@@ -110,4 +115,3 @@ Zoo.adding(Parrot0.name, Parrot0.id)
 Zoo.inspecting()
 Zoo.removing(Lion0.name, Lion0.id)
 Zoo.inspecting()
-

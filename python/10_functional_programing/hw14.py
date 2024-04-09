@@ -18,6 +18,7 @@ print(ev_n)
 #Write a function that calculates the factorial of a number using the functional approach.
 from functools import reduce
 
+
 def fact(n):
     return reduce(lambda x, y: x * y, range(1, n + 1), 1)
 

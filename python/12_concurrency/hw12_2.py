@@ -7,6 +7,7 @@ import random
 import threading
 import time
 
+
 def sleep_and_return_duration():
     """Sleeps for a random amount of time and returns the sleep duration."""
     sleep_duration = random.random() * 10

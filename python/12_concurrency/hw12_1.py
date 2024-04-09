@@ -5,6 +5,7 @@ Print the times it takes for each approach."""
 import concurrent.futures
 import time
 
+
 def calculate_sum(start: int, end: int) -> int:
     return sum(range(start, end+1))
 

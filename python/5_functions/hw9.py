@@ -23,5 +23,3 @@ print(calculate_rectangle_area(["a", "f", "i"], ["s", "a", "2"]))
 print(calculate_rectangle_area(25, "ohohoh"))
 print(calculate_rectangle_area(3.3, 12))
 print(calculate_rectangle_area(-10, 5))
-
-

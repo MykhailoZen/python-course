@@ -1,6 +1,7 @@
 #Create a decorator that logs the time taken by a function to execute.
 import time
 
+
 def log_time_dec(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()

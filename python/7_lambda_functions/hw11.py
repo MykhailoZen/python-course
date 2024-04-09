@@ -21,6 +21,7 @@ print(fr_list)
 
 #Given the list [1, 2, 3, 4, 5], calculate the multiplication result of all values using functools.reduce() from the standard library and a lambda function.
 import functools
+
 mchNum_list = [1, 2, 3, 4, 5]
 mchNum_list11 = functools.reduce(lambda x,y: x*y, mchNum_list)
 print(mchNum_list11)

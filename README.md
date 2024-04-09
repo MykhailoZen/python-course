@@ -6,7 +6,7 @@ How to contribute homework.
 2) Create onw branch name by your <name-surname> 'git branch <name-surname>'
 3) Adjust or add new files (depend on task) to current lesson folder
 4) Commit changes (add files before this step if new one been added 'git add .') 'git commit -m commit message'
-5) push changes to your named branch 'git push' 
+5) push changes to your named branch 'git push'
 
 *Other times:*
 1) Rebase your branch on master 'git rebase master <name-surname>'
