@@ -1,12 +1,11 @@
 import concurrent.futures
-import logging
 import logging.config
 import multiprocessing
 import random
 import time
 
 logging.config.fileConfig(
-    fname='config.ini',
+    fname="config.ini",
     disable_existing_loggers=False,
 )
 logger = logging.getLogger(__name__)
