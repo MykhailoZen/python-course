@@ -1,0 +1,23 @@
+[flake8]
+
+format = default
+
+count = True
+
+statistics = True
+
+max-line-length = 79
+
+output-file = .flake8.log
+
+filename =
+    *.py
+
+ignore =
+    E133,
+    E203,
+    W503
+    
+
+exclude =  __init__.py
+

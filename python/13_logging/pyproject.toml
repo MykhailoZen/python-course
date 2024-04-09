@@ -1,0 +1,7 @@
+
+
+[tool.isort]
+
+line_length = 79
+lines_after_imports = 2
+skip = '__init__.py'
