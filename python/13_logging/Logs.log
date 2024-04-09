@@ -1,0 +1,3 @@
+2024-04-09 16:03:31,490 - MainProcess - CRITICAL - Total workload time without concurrency could be : 4.005 sec
+2024-04-09 16:03:31,490 - MainProcess - INFO - The max workload time was: 4.005 sec
+2024-04-09 16:03:31,490 - MainProcess - ERROR - Finished! Verified with the Flake8 editor
