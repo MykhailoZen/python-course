@@ -16,7 +16,7 @@ logger.addHandler(file_handler)
 
 
 def execute_random_sleep_with_threads(num_tasks):
-    """Execute the random_sleep function multiple times using ThreadPoolExecutor"""
+    """Execute random_sleep function multiple times using ThreadPoolExecutor"""
     result_list = []
     with ThreadPoolExecutor(max_workers=5) as executor:
         futures = [executor.submit(random_sleep) for task in range(num_tasks)]
@@ -27,7 +27,7 @@ def execute_random_sleep_with_threads(num_tasks):
 
 
 def random_sleep() -> float:
-    """Generate a random value, sleep for that time, and return the real time spent"""
+    """Generate a random value, sleep for that time, and return time spent"""
     function_start_time = time.time()
     seconds_to_sleep = random.randint(1, 9)
     time.sleep(seconds_to_sleep)
