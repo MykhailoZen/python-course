@@ -1,0 +1,376 @@
+2024-04-08 10:40:21,825 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,290 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:32,290 - INFO - Sequential Duration: 10.464608192443848 seconds
+2024-04-08 10:40:32,579 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,579 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,580 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,580 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,580 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,581 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,585 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,581 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,586 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:32,598 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:45,399 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:45,399 - INFO - Sequential Duration: 12.812430143356323 seconds
+2024-04-08 10:40:45,514 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:45,556 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:45,556 - INFO - Sequential Duration: 12.969363927841187 seconds
+2024-04-08 10:40:45,621 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:45,762 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:45,763 - INFO - Sequential Duration: 13.177562952041626 seconds
+2024-04-08 10:40:45,820 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:45,822 - INFO - Sequential Duration: 13.239508867263794 seconds
+2024-04-08 10:40:45,842 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:45,842 - INFO - Sequential Duration: 13.262526035308838 seconds
+2024-04-08 10:40:45,857 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:45,857 - INFO - Sequential Duration: 13.258843183517456 seconds
+2024-04-08 10:40:45,870 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:45,937 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:45,941 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:45,970 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:46,000 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:46,000 - INFO - Sequential Duration: 13.419819116592407 seconds
+2024-04-08 10:40:46,102 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:46,103 - INFO - Sequential Duration: 13.52277398109436 seconds
+2024-04-08 10:40:46,160 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:46,160 - INFO - Sequential Duration: 13.579022884368896 seconds
+2024-04-08 10:40:46,162 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:46,233 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:46,254 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:46,255 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:46,255 - INFO - Sequential Duration: 13.674679040908813 seconds
+2024-04-08 10:40:46,315 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:59,579 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,579 - INFO - Sequential Duration: 13.957383155822754 seconds
+2024-04-08 10:40:59,655 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:59,669 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,670 - INFO - Sequential Duration: 14.154918909072876 seconds
+2024-04-08 10:40:59,756 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:59,798 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,799 - INFO - Sequential Duration: 13.828548908233643 seconds
+2024-04-08 10:40:59,853 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,855 - INFO - Sequential Duration: 13.691428184509277 seconds
+2024-04-08 10:40:59,872 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,872 - INFO - Sequential Duration: 13.934540033340454 seconds
+2024-04-08 10:40:59,878 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:59,904 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,905 - INFO - Sequential Duration: 14.033677816390991 seconds
+2024-04-08 10:40:59,922 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:59,922 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,923 - INFO - Sequential Duration: 13.981046915054321 seconds
+2024-04-08 10:40:59,944 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:59,978 - INFO - Starting CPU-bound work...
+2024-04-08 10:40:59,986 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:40:59,986 - INFO - Sequential Duration: 13.752649307250977 seconds
+2024-04-08 10:40:59,994 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:00,082 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:00,259 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:00,259 - INFO - Sequential Duration: 13.942965984344482 seconds
+2024-04-08 10:41:00,273 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:00,274 - INFO - Sequential Duration: 14.018969058990479 seconds
+2024-04-08 10:41:00,313 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:00,377 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:12,892 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:12,892 - INFO - Sequential Duration: 13.1353440284729 seconds
+2024-04-08 10:41:12,909 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:12,910 - INFO - Sequential Duration: 13.030949831008911 seconds
+2024-04-08 10:41:12,950 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:12,950 - INFO - Sequential Duration: 13.00566029548645 seconds
+2024-04-08 10:41:12,954 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:12,954 - INFO - Sequential Duration: 13.29810094833374 seconds
+2024-04-08 10:41:12,979 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:12,980 - INFO - Sequential Duration: 13.001229047775269 seconds
+2024-04-08 10:41:12,982 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:12,982 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,016 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,019 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,051 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,136 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:13,137 - INFO - Sequential Duration: 13.213958978652954 seconds
+2024-04-08 10:41:13,208 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,278 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:13,279 - INFO - Sequential Duration: 12.964813232421875 seconds
+2024-04-08 10:41:13,302 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:13,302 - INFO - Sequential Duration: 13.219653844833374 seconds
+2024-04-08 10:41:13,333 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,371 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,388 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:13,391 - INFO - Sequential Duration: 13.39368224143982 seconds
+2024-04-08 10:41:13,447 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:13,460 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:13,460 - INFO - Sequential Duration: 13.082178115844727 seconds
+2024-04-08 10:41:13,526 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,284 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,286 - INFO - Sequential Duration: 13.301844120025635 seconds
+2024-04-08 10:41:26,371 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,406 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,407 - INFO - Sequential Duration: 13.386717319488525 seconds
+2024-04-08 10:41:26,406 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,407 - INFO - Sequential Duration: 13.355369091033936 seconds
+2024-04-08 10:41:26,430 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,430 - INFO - Sequential Duration: 13.447904109954834 seconds
+2024-04-08 10:41:26,463 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,469 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,498 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,499 - INFO - Sequential Duration: 13.126848697662354 seconds
+2024-04-08 10:41:26,516 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,517 - INFO - Sequential Duration: 13.182040214538574 seconds
+2024-04-08 10:41:26,518 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,587 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,588 - INFO - Sequential Duration: 13.14030408859253 seconds
+2024-04-08 10:41:26,603 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,603 - INFO - Sequential Duration: 13.394889831542969 seconds
+2024-04-08 10:41:26,616 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,632 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,634 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,634 - INFO - Sequential Duration: 13.617751121520996 seconds
+2024-04-08 10:41:26,651 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:26,651 - INFO - Sequential Duration: 13.124699831008911 seconds
+2024-04-08 10:41:26,665 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,666 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,725 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:26,725 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,136 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,136 - INFO - Sequential Duration: 13.764387845993042 seconds
+2024-04-08 10:41:40,208 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,209 - INFO - Sequential Duration: 13.689152002334595 seconds
+2024-04-08 10:41:40,253 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,294 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,370 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,371 - INFO - Sequential Duration: 13.906248092651367 seconds
+2024-04-08 10:41:40,395 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,395 - INFO - Sequential Duration: 13.779017925262451 seconds
+2024-04-08 10:41:40,437 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,470 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,497 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,498 - INFO - Sequential Duration: 13.772234916687012 seconds
+2024-04-08 10:41:40,502 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,503 - INFO - Sequential Duration: 13.869627952575684 seconds
+2024-04-08 10:41:40,558 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,563 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,616 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,616 - INFO - Sequential Duration: 13.949970245361328 seconds
+2024-04-08 10:41:40,641 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,641 - INFO - Sequential Duration: 14.171376943588257 seconds
+2024-04-08 10:41:40,672 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,699 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:40,851 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:40,852 - INFO - Sequential Duration: 14.126092195510864 seconds
+2024-04-08 10:41:40,934 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:41,110 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:41,110 - INFO - Sequential Duration: 14.44385576248169 seconds
+2024-04-08 10:41:41,198 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:53,736 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:53,736 - INFO - Sequential Duration: 13.482608795166016 seconds
+2024-04-08 10:41:53,811 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:53,876 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:53,877 - INFO - Sequential Duration: 13.405285835266113 seconds
+2024-04-08 10:41:53,894 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:53,895 - INFO - Sequential Duration: 13.600224018096924 seconds
+2024-04-08 10:41:53,935 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:53,936 - INFO - Sequential Duration: 13.376993894577026 seconds
+2024-04-08 10:41:53,938 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:53,939 - INFO - Sequential Duration: 13.239145040512085 seconds
+2024-04-08 10:41:53,947 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:53,947 - INFO - Sequential Duration: 13.383718967437744 seconds
+2024-04-08 10:41:53,961 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:53,962 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:53,999 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:54,011 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:54,012 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:54,033 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:54,034 - INFO - Sequential Duration: 13.595371007919312 seconds
+2024-04-08 10:41:54,090 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:54,091 - INFO - Sequential Duration: 13.418081998825073 seconds
+2024-04-08 10:41:54,093 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:54,158 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:54,429 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:54,430 - INFO - Sequential Duration: 13.494741916656494 seconds
+2024-04-08 10:41:54,481 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:41:54,481 - INFO - Sequential Duration: 13.281950950622559 seconds
+2024-04-08 10:41:54,487 - INFO - Starting CPU-bound work...
+2024-04-08 10:41:54,537 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,071 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,072 - INFO - Sequential Duration: 13.260287046432495 seconds
+2024-04-08 10:42:07,129 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,129 - INFO - Sequential Duration: 13.116981029510498 seconds
+2024-04-08 10:42:07,139 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,194 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,195 - INFO - Sequential Duration: 13.23172926902771 seconds
+2024-04-08 10:42:07,196 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,204 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,204 - INFO - Sequential Duration: 13.24198603630066 seconds
+2024-04-08 10:42:07,253 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,253 - INFO - Sequential Duration: 13.240763902664185 seconds
+2024-04-08 10:42:07,265 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,270 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,324 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,326 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,326 - INFO - Sequential Duration: 13.167677879333496 seconds
+2024-04-08 10:42:07,354 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,355 - INFO - Sequential Duration: 13.35502290725708 seconds
+2024-04-08 10:42:07,410 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,424 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,425 - INFO - Sequential Duration: 12.936145782470703 seconds
+2024-04-08 10:42:07,444 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,454 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,455 - INFO - Sequential Duration: 13.360400199890137 seconds
+2024-04-08 10:42:07,513 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,527 - INFO - Starting CPU-bound work...
+2024-04-08 10:42:07,688 - INFO - Sequential Result: 576460752840294400
+2024-04-08 10:42:07,689 - INFO - Sequential Duration: 13.150558948516846 seconds
+2024-04-08 10:42:07,745 - INFO - Starting CPU-bound work...
+2024-04-08 10:51:28,945 - INFO - Starting CPU-bound work...
+2024-04-08 10:51:30,393 - INFO - Parallel Sum: 576460752840294400
+2024-04-08 10:51:30,393 - INFO - Parallel Duration for multiprocessing: 1.4483909606933594 seconds
+2024-04-08 10:51:40,856 - INFO - Sequential Sum: 576460752840294400
+2024-04-08 10:51:40,856 - INFO - Sequential Duration: 10.461585998535156 seconds
+2024-04-08 10:51:42,250 - INFO - Parallel Sum: 576460752840294400
+2024-04-08 10:51:42,251 - INFO - Parallel Duration for concurrent.futures: 1.3938610553741455 seconds
+2024-04-08 10:51:42,251 - INFO - Starting IO-bound work...
+2024-04-08 10:51:42,252 - INFO - Sleeping for 2.54 seconds
+2024-04-08 10:51:42,252 - INFO - Sleeping for 2.52 seconds
+2024-04-08 10:51:42,252 - INFO - Sleeping for 7.31 seconds
+2024-04-08 10:51:42,252 - INFO - Sleeping for 3.03 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 3.86 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 8.52 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 7.44 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 0.35 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 8.71 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 6.90 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 4.19 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 9.36 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 0.99 seconds
+2024-04-08 10:51:42,253 - INFO - Sleeping for 7.44 seconds
+2024-04-08 10:51:42,604 - INFO - Sleeping for 3.88 seconds
+2024-04-08 10:51:43,250 - INFO - Sleeping for 0.61 seconds
+2024-04-08 10:51:43,866 - INFO - Sleeping for 3.11 seconds
+2024-04-08 10:51:44,770 - INFO - Sleeping for 7.08 seconds
+2024-04-08 10:51:44,798 - INFO - Sleeping for 0.84 seconds
+2024-04-08 10:51:44,798 - INFO - Slept for 2.54 seconds.
+2024-04-08 10:51:44,798 - INFO - Slept for 2.52 seconds.
+2024-04-08 10:51:45,285 - INFO - Sleeping for 1.52 seconds
+2024-04-08 10:51:49,568 - INFO - Slept for 7.31 seconds.
+2024-04-08 10:51:49,570 - INFO - Slept for 3.03 seconds.
+2024-04-08 10:51:49,570 - INFO - Slept for 3.86 seconds.
+2024-04-08 10:51:50,775 - INFO - Slept for 8.52 seconds.
+2024-04-08 10:51:50,776 - INFO - Slept for 7.44 seconds.
+2024-04-08 10:51:50,776 - INFO - Slept for 0.35 seconds.
+2024-04-08 10:51:50,962 - INFO - Slept for 8.71 seconds.
+2024-04-08 10:51:50,962 - INFO - Slept for 6.90 seconds.
+2024-04-08 10:51:50,962 - INFO - Slept for 4.19 seconds.
+2024-04-08 10:51:51,622 - INFO - Slept for 9.36 seconds.
+2024-04-08 10:51:51,623 - INFO - Slept for 0.99 seconds.
+2024-04-08 10:51:51,623 - INFO - Slept for 7.44 seconds.
+2024-04-08 10:51:51,623 - INFO - Slept for 3.88 seconds.
+2024-04-08 10:51:51,623 - INFO - Slept for 0.61 seconds.
+2024-04-08 10:51:51,623 - INFO - Slept for 3.11 seconds.
+2024-04-08 10:51:51,854 - INFO - Slept for 7.08 seconds.
+2024-04-08 10:51:51,854 - INFO - Slept for 0.84 seconds.
+2024-04-08 10:51:51,854 - INFO - Slept for 1.52 seconds.
+2024-04-08 10:51:51,854 - INFO - Total Workload Time: 90.19 seconds
+2024-04-08 10:51:51,854 - INFO - Max Workload Time: 9.36 seconds
+2024-04-08 10:51:51,854 - INFO - Elapsed Time: 9.60 seconds
+2024-04-08 17:39:52,013 - INFO - Starting CPU-bound work...
+2024-04-08 17:39:53,670 - INFO - Parallel Sum: 576460752840294400
+2024-04-08 17:39:53,670 - INFO - Parallel Duration for multiprocessing: 1.656707763671875 seconds
+2024-04-08 17:40:02,802 - INFO - Sequential Sum: 576460752840294400
+2024-04-08 17:40:02,803 - INFO - Sequential Duration: 9.131409883499146 seconds
+2024-04-08 17:40:04,171 - INFO - Parallel Sum: 576460752840294400
+2024-04-08 17:40:04,171 - INFO - Parallel Duration for concurrent.futures: 1.367448091506958 seconds
+2024-04-08 17:40:04,171 - INFO - Starting IO-bound work...
+2024-04-08 17:40:04,172 - INFO - Sleeping for 8.16 seconds
+2024-04-08 17:40:04,172 - INFO - Sleeping for 1.39 seconds
+2024-04-08 17:40:04,172 - INFO - Sleeping for 5.02 seconds
+2024-04-08 17:40:04,172 - INFO - Sleeping for 5.78 seconds
+2024-04-08 17:40:04,172 - INFO - Sleeping for 4.69 seconds
+2024-04-08 17:40:04,172 - INFO - Sleeping for 1.41 seconds
+2024-04-08 17:40:04,172 - INFO - Sleeping for 4.04 seconds
+2024-04-08 17:40:04,172 - INFO - Sleeping for 2.89 seconds
+2024-04-08 17:40:04,173 - INFO - Sleeping for 6.80 seconds
+2024-04-08 17:40:04,173 - INFO - Sleeping for 9.66 seconds
+2024-04-08 17:40:04,173 - INFO - Sleeping for 5.00 seconds
+2024-04-08 17:40:04,173 - INFO - Sleeping for 4.17 seconds
+2024-04-08 17:40:04,173 - INFO - Sleeping for 9.99 seconds
+2024-04-08 17:40:04,173 - INFO - Sleeping for 7.33 seconds
+2024-04-08 17:40:05,561 - INFO - Sleeping for 1.49 seconds
+2024-04-08 17:40:05,579 - INFO - Sleeping for 7.82 seconds
+2024-04-08 17:40:07,055 - INFO - Sleeping for 0.22 seconds
+2024-04-08 17:40:07,066 - INFO - Sleeping for 0.83 seconds
+2024-04-08 17:40:07,280 - INFO - Sleeping for 7.97 seconds
+2024-04-08 17:40:07,894 - INFO - Sleeping for 4.82 seconds
+2024-04-08 17:40:12,336 - INFO - Slept for 8.16 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 1.39 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 5.02 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 5.78 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 4.69 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 1.41 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 4.04 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 2.89 seconds.
+2024-04-08 17:40:12,336 - INFO - Slept for 6.80 seconds.
+2024-04-08 17:40:13,831 - INFO - Slept for 9.66 seconds.
+2024-04-08 17:40:13,831 - INFO - Slept for 5.00 seconds.
+2024-04-08 17:40:13,831 - INFO - Slept for 4.17 seconds.
+2024-04-08 17:40:14,166 - INFO - Slept for 9.99 seconds.
+2024-04-08 17:40:14,166 - INFO - Slept for 7.33 seconds.
+2024-04-08 17:40:14,166 - INFO - Slept for 1.49 seconds.
+2024-04-08 17:40:14,166 - INFO - Slept for 7.82 seconds.
+2024-04-08 17:40:14,166 - INFO - Slept for 0.22 seconds.
+2024-04-08 17:40:14,166 - INFO - Slept for 0.83 seconds.
+2024-04-08 17:40:15,255 - INFO - Slept for 7.97 seconds.
+2024-04-08 17:40:15,255 - INFO - Slept for 4.82 seconds.
+2024-04-08 17:40:15,256 - INFO - Total Workload Time: 99.47 seconds
+2024-04-08 17:40:15,256 - INFO - Max Workload Time: 9.99 seconds
+2024-04-08 17:40:15,256 - INFO - Elapsed Time: 11.08 seconds
+2024-04-09 09:13:57,734 - INFO - Starting CPU-bound work...
+2024-04-09 09:13:59,338 - INFO - Parallel Sum: 576460752840294400
+2024-04-09 09:13:59,338 - INFO - Parallel Duration for multiprocessing: 1.6038730144500732 seconds
+2024-04-09 09:14:09,810 - INFO - Sequential Sum: 576460752840294400
+2024-04-09 09:14:09,812 - INFO - Sequential Duration: 10.471667766571045 seconds
+2024-04-09 09:14:11,209 - INFO - Parallel Sum: 576460752840294400
+2024-04-09 09:14:11,209 - INFO - Parallel Duration for concurrent.futures: 1.3968658447265625 seconds
+2024-04-09 09:14:11,209 - INFO - Starting IO-bound work...
+2024-04-09 09:14:11,210 - INFO - Sleeping for 0.08 seconds
+2024-04-09 09:14:11,210 - INFO - Sleeping for 4.03 seconds
+2024-04-09 09:14:11,210 - INFO - Sleeping for 6.48 seconds
+2024-04-09 09:14:11,210 - INFO - Sleeping for 0.21 seconds
+2024-04-09 09:14:11,210 - INFO - Sleeping for 7.35 seconds
+2024-04-09 09:14:11,210 - INFO - Sleeping for 9.72 seconds
+2024-04-09 09:14:11,210 - INFO - Sleeping for 1.90 seconds
+2024-04-09 09:14:11,210 - INFO - Sleeping for 7.07 seconds
+2024-04-09 09:14:11,211 - INFO - Sleeping for 4.77 seconds
+2024-04-09 09:14:11,211 - INFO - Sleeping for 9.07 seconds
+2024-04-09 09:14:11,211 - INFO - Sleeping for 1.42 seconds
+2024-04-09 09:14:11,211 - INFO - Sleeping for 8.90 seconds
+2024-04-09 09:14:11,211 - INFO - Sleeping for 0.90 seconds
+2024-04-09 09:14:11,211 - INFO - Sleeping for 0.36 seconds
+2024-04-09 09:14:11,297 - INFO - Sleeping for 4.02 seconds
+2024-04-09 09:14:11,297 - INFO - Slept for 0.08 seconds.
+2024-04-09 09:14:11,421 - INFO - Sleeping for 0.05 seconds
+2024-04-09 09:14:11,472 - INFO - Sleeping for 5.91 seconds
+2024-04-09 09:14:11,574 - INFO - Sleeping for 7.67 seconds
+2024-04-09 09:14:12,115 - INFO - Sleeping for 0.27 seconds
+2024-04-09 09:14:12,390 - INFO - Sleeping for 9.25 seconds
+2024-04-09 09:14:15,240 - INFO - Slept for 4.03 seconds.
+2024-04-09 09:14:17,690 - INFO - Slept for 6.48 seconds.
+2024-04-09 09:14:17,691 - INFO - Slept for 0.21 seconds.
+2024-04-09 09:14:18,558 - INFO - Slept for 7.35 seconds.
+2024-04-09 09:14:20,931 - INFO - Slept for 9.72 seconds.
+2024-04-09 09:14:20,932 - INFO - Slept for 1.90 seconds.
+2024-04-09 09:14:20,932 - INFO - Slept for 7.07 seconds.
+2024-04-09 09:14:20,932 - INFO - Slept for 4.77 seconds.
+2024-04-09 09:14:20,932 - INFO - Slept for 9.07 seconds.
+2024-04-09 09:14:20,932 - INFO - Slept for 1.42 seconds.
+2024-04-09 09:14:20,932 - INFO - Slept for 8.90 seconds.
+2024-04-09 09:14:20,933 - INFO - Slept for 0.90 seconds.
+2024-04-09 09:14:20,933 - INFO - Slept for 0.36 seconds.
+2024-04-09 09:14:20,933 - INFO - Slept for 4.02 seconds.
+2024-04-09 09:14:20,933 - INFO - Slept for 0.05 seconds.
+2024-04-09 09:14:20,933 - INFO - Slept for 5.91 seconds.
+2024-04-09 09:14:20,935 - INFO - Slept for 7.67 seconds.
+2024-04-09 09:14:20,935 - INFO - Slept for 0.27 seconds.
+2024-04-09 09:14:21,641 - INFO - Slept for 9.25 seconds.
+2024-04-09 09:14:21,641 - INFO - Total Workload Time: 89.43 seconds
+2024-04-09 09:14:21,641 - INFO - Max Workload Time: 9.72 seconds
+2024-04-09 09:14:21,641 - INFO - Elapsed Time: 10.43 seconds

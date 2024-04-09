@@ -1,0 +1,92 @@
+2024-04-08 10:42:20,961 - INFO - Parallel Sum: 576460752840294400
+2024-04-08 10:42:20,961 - INFO - Parallel Duration for multiprocessing: 3.8662819862365723 seconds
+2024-04-08 10:42:50,174 - INFO - Sequential Sum: 576460752840294400
+2024-04-08 10:42:50,175 - INFO - Sequential Duration: 29.212785005569458 seconds
+2024-04-08 10:42:53,928 - INFO - Parallel Sum: 576460752840294400
+2024-04-08 10:42:53,928 - INFO - Parallel Duration for concurrent.futures: 3.7534289360046387 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 6.70 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 1.10 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 1.88 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 1.38 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 1.91 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 9.32 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 3.63 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 0.44 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 1.87 seconds
+2024-04-08 10:42:53,930 - INFO - Sleeping for 7.49 seconds
+2024-04-08 10:42:53,931 - INFO - Sleeping for 8.30 seconds
+2024-04-08 10:42:53,931 - INFO - Sleeping for 7.39 seconds
+2024-04-08 10:42:53,931 - INFO - Sleeping for 7.87 seconds
+2024-04-08 10:42:53,931 - INFO - Sleeping for 1.12 seconds
+2024-04-08 10:42:54,377 - INFO - Sleeping for 6.90 seconds
+2024-04-08 10:42:55,036 - INFO - Sleeping for 2.70 seconds
+2024-04-08 10:42:55,056 - INFO - Sleeping for 1.70 seconds
+2024-04-08 10:42:55,320 - INFO - Sleeping for 1.45 seconds
+2024-04-08 10:42:55,801 - INFO - Sleeping for 2.89 seconds
+2024-04-08 10:42:55,819 - INFO - Sleeping for 9.12 seconds
+2024-04-08 10:43:00,640 - INFO - Slept for 6.70 seconds.
+2024-04-08 10:43:00,641 - INFO - Slept for 1.10 seconds.
+2024-04-08 10:43:00,641 - INFO - Slept for 1.88 seconds.
+2024-04-08 10:43:00,641 - INFO - Slept for 1.38 seconds.
+2024-04-08 10:43:00,641 - INFO - Slept for 1.91 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 9.32 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 3.63 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 0.44 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 1.87 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 7.49 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 8.30 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 7.39 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 7.87 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 1.12 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 6.90 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 2.70 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 1.70 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 1.45 seconds.
+2024-04-08 10:43:03,251 - INFO - Slept for 2.89 seconds.
+2024-04-08 10:43:04,944 - INFO - Slept for 9.12 seconds.
+2024-04-08 10:43:04,945 - INFO - Total Workload Time: 85.17 seconds
+2024-04-08 10:43:04,945 - INFO - Max Workload Time: 9.32 seconds
+2024-04-08 10:43:04,945 - INFO - Elapsed Time: 11.02 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 0.78 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 3.07 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 2.74 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 7.89 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 6.30 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 4.73 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 5.76 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 9.46 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 0.91 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 6.95 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 1.65 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 8.46 seconds
+2024-04-08 10:43:04,947 - INFO - Sleeping for 3.64 seconds
+2024-04-08 10:43:04,948 - INFO - Sleeping for 6.13 seconds
+2024-04-08 10:43:04,948 - INFO - Sleeping for 6.90 seconds
+2024-04-08 10:43:04,948 - INFO - Sleeping for 5.67 seconds
+2024-04-08 10:43:04,948 - INFO - Sleeping for 0.58 seconds
+2024-04-08 10:43:04,948 - INFO - Sleeping for 6.29 seconds
+2024-04-08 10:43:04,948 - INFO - Sleeping for 0.03 seconds
+2024-04-08 10:43:04,948 - INFO - Sleeping for 8.38 seconds
+2024-04-08 10:43:14,409 - INFO - Slept for 0.78 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 3.07 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 2.74 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 7.89 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 6.30 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 4.73 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 5.76 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 9.46 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 0.91 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 6.95 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 1.65 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 8.46 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 3.64 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 6.13 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 6.90 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 5.67 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 0.58 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 6.29 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 0.03 seconds.
+2024-04-08 10:43:14,410 - INFO - Slept for 8.38 seconds.
+2024-04-08 10:43:14,410 - INFO - Total Workload Time: 96.32 seconds
+2024-04-08 10:43:14,410 - INFO - Max Workload Time: 9.46 seconds
+2024-04-08 10:43:14,410 - INFO - Elapsed Time: 9.46 seconds
