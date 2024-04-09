@@ -1,0 +1,7 @@
+[flake8]
+exclude = .git, __pycache__, *debug.py, venv, ./tms/*, *pb2.py
+# Handle formatting conflicts between Black and Flake8:
+# https://github.com/python/black/issues/280 (E203)
+# https://github.com/python/black/issues/43 (W503)
+ignore = E203, W503, C408
+noqa-require-code = true
