@@ -1,0 +1,7 @@
+[flake8]
+# Set the maximum line length as specified in PEP 8
+max-line-length = 79
+# Ignore E203 and W503 as they are overridden by black
+extend-ignore = E203, W503
+# Show all errors, including those that are ignored by default
+show-source = true
