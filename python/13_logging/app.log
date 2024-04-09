@@ -1,0 +1,4 @@
+2024-04-09 14:29:02,115 - INFO - Sequential calculation result: 576460752840294400, Time taken: 0.00 seconds.
+2024-04-09 14:29:02,190 - INFO - Parallel calculation result: 576460752840294400, Time taken: 0.07 seconds.
+2024-04-09 14:38:19,821 - INFO - Sequential calculation result: 576460752840294400, Time taken: 0.00 seconds.
+2024-04-09 14:38:19,896 - INFO - Parallel calculation result: 576460752840294400, Time taken: 0.07 seconds.
