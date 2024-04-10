@@ -6,10 +6,13 @@ import logging
 range_start = 1
 range_end = 2**5
 num_parts = multiprocessing.cpu_count()
+logger = None
+
 
 def calculate_range_sum(range_start, range_end):
 
     res_1 = sum(range(range_start, range_end + 1))
+    logger.debug("logging calculate_range_sum func")
     return res_1
 
 def split_range_into_n_parts(range_start, range_end, num_parts):
@@ -39,25 +42,25 @@ def main_task(data_x):
 
 if __name__ == "__main__":
     logger = logging.getLogger("logger")
-    logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w',
+    logger.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s')
-    logging.debug("starting 1 phase")
+    logger.debug("starting 1 phase")
     start_time = time.time()
     range_sum = calculate_range_sum(range_start, range_end)
-    logging.debug("finishing 1 phase")
+    logger.debug("finishing 1 phase")
 
-    logging.debug("starting 2 phase")
+    logger.debug("starting 2 phase")
     straight_calc_total = round(time.time() - start_time, 2)
-    logging.info('straight calc took %s seconds', straight_calc_total)
-    logging.info('straight calc result: %s', range_sum)
-    logging.debug("finishing 2 phase")
+    logger.info('straight calc took %s seconds', straight_calc_total)
+    logger.info('straight calc result: %s', range_sum)
+    logger.debug("finishing 2 phase")
 
-    logging.debug("starting 3 phase")
+    logger.debug("starting 3 phase")
     start_time = time.time()
     ranges_split = split_range_into_n_parts(range_start, range_end +1, num_parts)
     split_list_total = round(time.time() - start_time, 2)
-    logging.info('split list took %s seconds', split_list_total)
-    logging.debug("finishing 3 phase")
+    logger.info('split list took %s seconds', split_list_total)
+    logger.debug("finishing 3 phase")
 
     logging.debug("starting 4 phase")
     start_time = time.time()

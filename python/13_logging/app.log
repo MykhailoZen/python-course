@@ -1,13 +1,14 @@
-2024-04-08 13:34:56,631 - DEBUG - starting 1 phase
-2024-04-08 13:34:56,631 - DEBUG - finishing 1 phase
-2024-04-08 13:34:56,631 - DEBUG - starting 2 phase
-2024-04-08 13:34:56,631 - INFO - straight calc took 0.0 seconds
-2024-04-08 13:34:56,631 - INFO - straight calc result: 528
-2024-04-08 13:34:56,631 - DEBUG - finishing 2 phase
-2024-04-08 13:34:56,631 - DEBUG - starting 3 phase
-2024-04-08 13:34:56,631 - INFO - split list took 0.0 seconds
-2024-04-08 13:34:56,631 - DEBUG - finishing 3 phase
-2024-04-08 13:34:56,631 - DEBUG - starting 4 phase
-2024-04-08 13:34:56,866 - INFO - split calc took 0.23 seconds
-2024-04-08 13:34:56,866 - INFO - split calc result: 528
-2024-04-08 13:34:56,866 - DEBUG - finishing 4 phase
+2024-04-10 15:19:34,087 - DEBUG - starting 1 phase
+2024-04-10 15:19:34,087 - DEBUG - logging calculate_range_sum func
+2024-04-10 15:19:34,087 - DEBUG - finishing 1 phase
+2024-04-10 15:19:34,087 - DEBUG - starting 2 phase
+2024-04-10 15:19:34,087 - INFO - straight calc took 0.0 seconds
+2024-04-10 15:19:34,087 - INFO - straight calc result: 528
+2024-04-10 15:19:34,088 - DEBUG - finishing 2 phase
+2024-04-10 15:19:34,088 - DEBUG - starting 3 phase
+2024-04-10 15:19:34,088 - INFO - split list took 0.0 seconds
+2024-04-10 15:19:34,088 - DEBUG - finishing 3 phase
+2024-04-10 15:19:34,088 - DEBUG - starting 4 phase
+2024-04-10 15:19:34,426 - INFO - split calc took 0.34 seconds
+2024-04-10 15:19:34,427 - INFO - split calc result: 528
+2024-04-10 15:19:34,427 - DEBUG - finishing 4 phase
