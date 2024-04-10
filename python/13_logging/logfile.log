@@ -1,0 +1,9 @@
+2024-04-10 16:46:21,641 - INFO - Running sequential function...
+2024-04-10 16:46:32,231 - INFO - Sequential result: 576460752840294400
+2024-04-10 16:46:32,232 - INFO - Sequential execution time: 10.5901198387146 seconds
+2024-04-10 16:46:32,232 - INFO - 
+Running parallel function...
+2024-04-10 16:46:34,902 - INFO - Parallel result: 576460752840294400
+2024-04-10 16:46:34,902 - INFO - Parallel execution time: 2.6701340675354004 seconds
+2024-04-10 16:46:34,902 - INFO - 
+Results match!
