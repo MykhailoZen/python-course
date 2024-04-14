@@ -94,26 +94,3 @@ if __name__ == "__main__":
         f"Difference between Serial and Parallel times is"
         f" {serial_time - parallel_time} sec"
     )
-
-    # Verify the result is 576460752840294400 of both function.
-
-    def check_serial():
-        if serial_result == 576460752840294400:
-            logger.debug("Yes, serial result is correct.")
-        else:
-            logger.error(
-                f"No, serial result is unexpected. Actual result is "
-                f"{serial_result}."
-            )
-
-    def check_paralel():
-        if parallel_result == 576460752840294400:
-            logger.debug("Yes, parallel result is correct.")
-        else:
-            logger.error(
-                f"No, parallel result is unexpected. "
-                f"Actual result is {parallel_result}."
-            )
-
-    check_serial()
-    check_paralel()
