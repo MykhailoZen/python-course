@@ -1,5 +1,7 @@
+# app.py
+
 from flask import Flask, request, jsonify
-from .student import Student
+from students import Student
 
 app = Flask(__name__)
 
@@ -50,3 +52,7 @@ def delete_student(student_id):
     global students
     students = [student for student in students if student.student_id != student_id]
     return jsonify({'message': 'Deleted successfully'}), 204
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
