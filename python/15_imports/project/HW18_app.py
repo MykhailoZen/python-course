@@ -1,8 +1,5 @@
 from flask import Flask, request, jsonify
 from HW18 import Student
-import logging
-
-logging.basicConfig()
 
 application = Flask(__name__)
 
