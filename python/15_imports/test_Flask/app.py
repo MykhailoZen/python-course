@@ -16,9 +16,12 @@ def handle_students():
 
 def create_student():
     data = request.json
-    new_student = Student(data.get("name"))
-    students.append(new_student)
-    return jsonify({"message": "Student created successfully"}), 201
+    if data.get("name") is not None:
+        new_student = Student(data.get("name"))
+        students.append(new_student)
+        return jsonify({"message": "Student created successfully"}), 201
+    else:
+        return jsonify({"error": "Name is required."}), 400
 
 
 def get_students():
@@ -27,37 +30,45 @@ def get_students():
 
 @app.route("/students/<int:id>", methods=["GET", "PUT", "DELETE"])
 def handle_student(id):
+    student = find_student_by_id(id)
     if request.method == "PUT":
-        return update_student(id)
+        if student:
+            return update_student(student)
+        else:
+            return jsonify({"message": "Student not found"}), 404
     elif request.method == "GET":
-        return get_student_name(id)
+        if student:
+            return get_student_name(student)
+        else:
+            return jsonify({"error": "Student not found"}), 404
     elif request.method == "DELETE":
-        return delete_student(id)
+        if student:
+            return delete_student(student)
+        else:
+            return jsonify({"error": "Student not found"}), 404
 
 
-def update_student(id):
+def find_student_by_id(id):
+    for student in students:
+        if student.id == id:
+            return student
+    return None
+
+
+def update_student(student):
     data = request.json
     student_name = data.get("name")
     if student_name is not None:
-        for student in students:
-            if student.id == id:
-                student.name = student_name
-                return jsonify({"message": "Student updated successfully"}), 200
-        return jsonify({"message": "Student not found"}), 404
+        student.name = student_name
+        return jsonify({"message": "Student updated successfully"}), 200
     else:
         return jsonify({"error": "Name field is missing in request data"}), 400
 
 
-def get_student_name(id):
-    for student in students:
-        if student.id == id:
-            return jsonify({"id": id, "name": student.name}), 200
-    return jsonify({"error": "Student not found"}), 404
+def get_student_name(student):
+    return jsonify({"id": student.id, "name": student.name}), 200
 
 
-def delete_student(id):
-    for student in students:
-        if student.id == id:
-            students.remove(student)
-            return jsonify({"message": "Student deleted successfully"}), 200
-    return jsonify({"error": "Student not found"}), 404
+def delete_student(student):
+    students.remove(student)
+    return jsonify({"message": "Student deleted successfully"}), 200

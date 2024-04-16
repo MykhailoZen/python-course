@@ -3,17 +3,20 @@ flask --app app run --debug
 
 Create new student:
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Anton"}' http://127.0.0.1:5000/students
+curl -X POST -H "Content-Type: application/json" -d '{}' http://127.0.0.1:5000/students
 
 Update student name by id:
 curl -X PUT -H "Content-Type: application/json" -d '{"name": "Updated Anton"}' http://127.0.0.1:5000/students/1
+curl -X PUT -H "Content-Type: application/json" -d '{"surname": "Updated Anton"}' http://127.0.0.1:5000/students/1
 
 Get students list:
 curl http://127.0.0.1:5000/students
 
 Get student name by id:
 curl http://localhost:5000/students/1
+curl http://localhost:5000/students/0
 
 Delete user by id:
 curl -X DELETE http://localhost:5000/students/1
-
+curl -X DELETE http://localhost:5000/students/0
 
