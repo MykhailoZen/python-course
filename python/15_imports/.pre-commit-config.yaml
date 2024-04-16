@@ -1,0 +1,39 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+default_language_version:
+    python: python3.9
+
+exclude: |
+    (?x)^(
+        lib/sidewalk/tools/.*|
+        lib/devices/dpd/binary_logs/.*
+    )$
+
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+        exclude: tests/tests_lpd/LPD_README.md
+
+-   repo: https://github.com/timothycrosley/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+
+-   repo: https://github.com/psf/black
+    rev: 24.3.0
+    hooks:
+    -   id: black
+        exclude: (.*pb2.py)
+
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8
+        additional_dependencies:
+        -   flake8-comprehensions==3.10.1
+        -   flake8-noqa==1.4.0
