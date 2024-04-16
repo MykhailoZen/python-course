@@ -4,9 +4,12 @@ from student import Student
 
 app = Flask(__name__)
 
+
+# Added few students for testing purpose
 students = [
     Student("James Bond", 1),
-    Student("John Smith", 2),]
+    Student("John Smith", 2),
+]
 
 
 @app.route('/students', methods=['GET'])
@@ -34,15 +37,13 @@ def create_student():
 def update_student(student_id):
     data = request.get_json()
     name = data.get('name')
-    student = None
-    for s in students:
-        if s.student_id == student_id:
-            student = s
-            break
-    if not student:
+    index = next(
+        (i for i, s in enumerate(students) if s.student_id == student_id),
+        None)
+    if index is None:
         return json.dumps({'error': 'Student not found'}), 404
     if name:
-        student._name = name
+        students[index].name = name
     return json.dumps({'message': 'Student updated successfully'})
 
 

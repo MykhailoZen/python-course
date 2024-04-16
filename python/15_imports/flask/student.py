@@ -7,6 +7,10 @@ class Student:
     def name(self):
         return self._name
 
+    @name.setter
+    def name(self, new_name):
+        self._name = new_name
+
     @property
     def student_id(self):
         return self._student_id
