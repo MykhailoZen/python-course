@@ -42,7 +42,7 @@ def main_task(data_x):
 
 if __name__ == "__main__":
     logger = logging.getLogger("logger")
-    logger.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w',
+    logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s')
     logger.debug("starting 1 phase")
     start_time = time.time()
