@@ -42,8 +42,22 @@ def main_task(data_x):
 
 if __name__ == "__main__":
     logger = logging.getLogger("logger")
-    logging.basicConfig(level=logging.DEBUG, filename='app.log', filemode='w',
-                        format='%(asctime)s - %(levelname)s - %(message)s')
+    logger.setLevel(logging.DEBUG)
+
+    file_handler = logging.FileHandler('app.log')
+    file_handler.setLevel(logging.INFO)
+
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+
     logger.debug("starting 1 phase")
     start_time = time.time()
     range_sum = calculate_range_sum(range_start, range_end)
