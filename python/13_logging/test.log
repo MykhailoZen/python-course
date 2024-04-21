@@ -1,0 +1,47 @@
+2024-04-21 22:44:47,475 - INFO - Parallel Sum: 576460752840294400
+2024-04-21 22:44:47,475 - INFO - Parallel Duration for multiprocessing: 13.92005705833435 sec
+2024-04-21 22:45:44,497 - INFO - Sum: 576460752840294400
+2024-04-21 22:45:44,498 - INFO - Duration: 57.021729946136475 seconds
+2024-04-21 22:45:44,498 - INFO - Sleeping: 7.4943 sec
+2024-04-21 22:45:44,498 - INFO - Sleeping: 4.7460 sec
+2024-04-21 22:45:44,499 - INFO - Sleeping: 3.0780 sec
+2024-04-21 22:45:44,499 - INFO - Sleeping: 2.6286 sec
+2024-04-21 22:45:44,499 - INFO - Sleeping: 1.8630 sec
+2024-04-21 22:45:44,499 - INFO - Sleeping: 0.7745 sec
+2024-04-21 22:45:44,500 - INFO - Sleeping: 6.6683 sec
+2024-04-21 22:45:44,500 - INFO - Sleeping: 6.0186 sec
+2024-04-21 22:45:44,500 - INFO - Sleeping: 1.9945 sec
+2024-04-21 22:45:44,501 - INFO - Sleeping: 1.2559 sec
+2024-04-21 22:45:44,501 - INFO - Sleeping: 9.8957 sec
+2024-04-21 22:45:44,501 - INFO - Sleeping: 4.4968 sec
+2024-04-21 22:45:44,501 - INFO - Sleeping: 7.7929 sec
+2024-04-21 22:45:44,502 - INFO - Sleeping: 7.5524 sec
+2024-04-21 22:45:44,502 - INFO - Sleeping: 5.0729 sec
+2024-04-21 22:45:44,502 - INFO - Sleeping: 9.3473 sec
+2024-04-21 22:45:44,502 - INFO - Sleeping: 0.2718 sec
+2024-04-21 22:45:44,502 - INFO - Sleeping: 3.8108 sec
+2024-04-21 22:45:44,503 - INFO - Sleeping: 4.1875 sec
+2024-04-21 22:45:44,503 - INFO - Sleeping: 6.8026 sec
+2024-04-21 22:45:51,998 - INFO - Sleeping: 7.4943 sec
+2024-04-21 22:45:51,998 - INFO - Sleeping: 4.7460 sec
+2024-04-21 22:45:51,998 - INFO - Sleeping: 3.0780 sec
+2024-04-21 22:45:51,998 - INFO - Sleeping: 2.6286 sec
+2024-04-21 22:45:51,999 - INFO - Sleeping: 1.8630 sec
+2024-04-21 22:45:51,999 - INFO - Sleeping: 0.7745 sec
+2024-04-21 22:45:51,999 - INFO - Sleeping: 6.6683 sec
+2024-04-21 22:45:51,999 - INFO - Sleeping: 6.0186 sec
+2024-04-21 22:45:51,999 - INFO - Sleeping: 1.9945 sec
+2024-04-21 22:45:51,999 - INFO - Sleeping: 1.2559 sec
+2024-04-21 22:45:54,400 - INFO - Sleeping: 9.8957 sec
+2024-04-21 22:45:54,400 - INFO - Sleeping: 4.4968 sec
+2024-04-21 22:45:54,400 - INFO - Sleeping: 7.7929 sec
+2024-04-21 22:45:54,400 - INFO - Sleeping: 7.5524 sec
+2024-04-21 22:45:54,400 - INFO - Sleeping: 5.0729 sec
+2024-04-21 22:45:54,400 - INFO - Sleeping: 9.3473 sec
+2024-04-21 22:45:54,400 - INFO - Sleeping: 0.2718 sec
+2024-04-21 22:45:54,401 - INFO - Sleeping: 3.8108 sec
+2024-04-21 22:45:54,401 - INFO - Sleeping: 4.1875 sec
+2024-04-21 22:45:54,401 - INFO - Sleeping: 6.8026 sec
+2024-04-21 22:45:54,402 - INFO - Total Workload: 95.7523 sec
+2024-04-21 22:45:54,402 - INFO - Max Workload: 9.8957 sec
+2024-04-21 22:45:54,402 - INFO - Elapsed Time: 9.9041 sec
