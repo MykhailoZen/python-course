@@ -74,7 +74,7 @@ def split_range_into_chunks(start, end, num_chunks):
 
 if __name__ == "__main__":
     start_range = 1
-    end_range = 2 ** 30
+    end_range = 2**30
     """number of chunks to split the range"""
     num_chunks = 20
 
