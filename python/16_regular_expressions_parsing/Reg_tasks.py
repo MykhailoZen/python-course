@@ -12,24 +12,17 @@ the main network interface. It's preferred to use a single regular expression.
 def get_network_info():
     try:
         # Run ifconfig command and capture its output
-        output = subprocess.check_output(["/sbin/ifconfig"]).decode("utf-8")
+        output = subprocess.check_output(["/sbin/ifconfig", "en0"]).decode("utf-8")
 
         # Define regular expression pattern to match MAC and IP addresses
-        pattern = r"([0-9a-fA-F]{2}(?:[:-][0-9a-fA-F]{2}){5})|inet (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
+        pattern = r"([0-9a-fA-F]{2}(?:[:-][0-9a-fA-F]{2}){5}).*inet (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
 
         # Search for matches in the output
-        matches = re.findall(pattern, output)
+        matches = re.search(pattern, output, flags=re.DOTALL)
 
         # Extract MAC and IP addresses of the main network interface
-        main_interface_mac = None
-        main_interface_ip = None
-        for match in matches:
-            if match[0] and match[1]:
-                main_interface_mac = match[0]
-                main_interface_ip = match[1]
-                break
 
-        return main_interface_mac, main_interface_ip
+        return matches.groups()
     except subprocess.CalledProcessError as e:
         print("Error executing ifconfig:", e)
         return None
@@ -39,15 +32,12 @@ def get_network_info():
 
 
 # Get MAC and IP addresses of the main network interface
-mac_address, ip_address = get_network_info()
+mac_ip_address = get_network_info()
 
 # Print the MAC and IP addresses
-if mac_address and ip_address:
-    print("MAC Address:", mac_address)
-    print("IP Address:", ip_address)
-else:
-    print("Failed to retrieve MAC and IP addresses.")
+print(mac_ip_address)
 
+print("second solution")
 
 def get_network_info_1(interface='en0'):
     try:
@@ -56,34 +46,25 @@ def get_network_info_1(interface='en0'):
         output = result.stdout.decode()
 
         # Define regular expression pattern to match MAC and IP addresses
-        pattern = r"ether ([0-9a-fA-F]{2}(?:[:-][0-9a-fA-F]{2}){5}).*?inet (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
+        pattern = r"([0-9a-fA-F]{2}(?:[:-][0-9a-fA-F]{2}){5})[\s\S]*inet (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
 
         # Search for matches in the output
-        matches = re.findall(pattern, output)
+        matches = re.search(pattern, output, flags=re.DOTALL)
 
         # Extract MAC and IP addresses
-        if matches:
-            mac_address, ip_address = matches[0]
-            return mac_address, ip_address
-        else:
-            return None, None
+        return matches.groups()
     except subprocess.CalledProcessError as e:
         print("Error executing ifconfig:", e)
-        return None, None
+        return None
     except Exception as e:
         print("An error occurred:", e)
-        return None, None
+        return None
 
 
 # Get MAC and IP addresses for the 'en0' interface
-mac_address, ip_address = get_network_info_1()
+mac_address = get_network_info_1()
+print(mac_address)
 
-# Print the MAC and IP addresses
-if mac_address and ip_address:
-    print("MAC Address:", mac_address)
-    print("IP Address:", ip_address)
-else:
-    print("Failed to retrieve MAC and IP addresses.")
 
 '''
 2. JSON & YAML: given two files, devices.yaml & lab_envs.json, parse and combine them into one YAML file, 
