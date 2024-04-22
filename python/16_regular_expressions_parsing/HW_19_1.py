@@ -15,7 +15,7 @@ pattern = r"""
     ([\da-fA-F:]+)    # Capture group for MAC address
     .*?               # Any characters
     (?:inet\s+)       # Non-capturing group to match "inet" followed by whitespace
-    ([\d.]+)         # Capture group for IPv4 address
+    ([\d.]+)          # Capture group for IPv4 address
 """
 
 matches = re.findall(pattern, output, re.DOTALL | re.VERBOSE)
