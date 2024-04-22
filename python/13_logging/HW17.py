@@ -1,8 +1,8 @@
+import logging
+import random
 
 import concurrent.futures
-import logging
 import multiprocessing
-import random
 import time
 
 # 1.Add logging to the code implemented in the "Concurrency" module.
@@ -40,8 +40,7 @@ def calculate_sum_parallel(r_chunks):
 def split_range_chunks(start, end, n_chunks):
     chunk_s = (end - start + 1) // n_chunks
     ranges = [
-        (start + i * chunk_s, start + (i + 1) * chunk_s - 1)
-        for i in range(n_chunks - 1)
+        (start + i * chunk_s, start + (i + 1) * chunk_s - 1) for i in range(n_chunks - 1)
     ]
     ranges.append((start + (n_chunks - 1) * chunk_s, end))
     return ranges
