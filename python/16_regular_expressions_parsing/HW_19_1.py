@@ -6,42 +6,24 @@
 import re
 import subprocess
 
-res = subprocess.run("ifconfig en0".split(), capture_output=True)
+res = subprocess.run("ifconfig", capture_output=True)
 output = res.stdout.decode()
 
-# Option 1 with two separate patterns for IP and MAC
-ip_pattern = r"(?:inet\s)(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"
-mac_pattern = (
-    r"(?:ether\s)([\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2})"
-)
-combine_pattern = rf"{ip_pattern}|{mac_pattern}"
-
-matches_1 = re.findall(combine_pattern, output)
-
-# Option 2 with one common pattern for IP and MAC
 pattern = r"""
-    (?:inet\s|ether\s)      # Non-capturing group to match "inet" or "ether" followed by a space
-    (                       # Start of capturing group
-    \d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}     # IPv4 address mapping in the format "xxx.xxx.xxx.xxx"
-    |                       # Or
-    [\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2} # MAC address mapping in the format "xx:xx:xx:xx:xx:xx"
-    )                       # End of capturing group
+    en0.*?            # A string containing "en0" and any characters up to the next occurrences
+    (?:ether\s+)      # Non-capturing group to match "ether" followed by whitespace
+    ([\da-fA-F:]+)    # Capture group for MAC address
+    .*?               # Any characters
+    (?:inet\s+)       # Non-capturing group to match "inet" followed by whitespace
+    ([\d.]+)         # Capture group for IPv4 address
 """
 
-matches_2 = re.findall(pattern, output, re.VERBOSE)
-
+matches = re.findall(pattern, output, re.DOTALL | re.VERBOSE)
 
 if __name__ == "__main__":
-    print("Option 1 with two separate patterns for IP and MAC")
-    if matches_1:
-        for match in matches_1:
-            ip_addres, mac_address = match
-            if ip_addres:
-                print(f"IP address {ip_addres}")
-            if mac_address:
-                print(f"MAC address {mac_address}")
-
-    print("Option 2 with one common pattern for IP and MAC")
-    if matches_2:
-        for match in matches_2:
-            print(match)
+    if matches:
+        mac_address, ip_address = matches[0]
+        print(f"MAC address: {mac_address}")
+        print(f"IP address: {ip_address}")
+    else:
+        print("MAC and IP addresses not found.")
