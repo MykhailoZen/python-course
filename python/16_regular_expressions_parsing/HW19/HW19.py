@@ -14,7 +14,7 @@ def get_network_info():
     matches = re.findall(pattern, ifconfig_output, re.DOTALL)
 
     if matches:
-        return matches[0]
+        return matches[0][1], matches[0][0]
     else:
         return None, None
 
