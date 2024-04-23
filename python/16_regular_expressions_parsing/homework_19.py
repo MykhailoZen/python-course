@@ -23,7 +23,7 @@ if __name__ == '__main__':
     # has "lab_env" attribute filled for each device. If there is no such env in the lab_envs.json, set it
     # for the corresponding device to None.
 
-    file_json = pathlib.Path('//Users/volodymyr.manko/documents/Projects/lab_envs.json')
+    file_json = pathlib.Path('lab_envs.json')
     text = file_json.read_text()
     data = json.loads(text)
 
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     lab11_env_2 = data['lab11-env-2']
     lab11_env_3 = data['lab11-env-3']
 
-    file_yaml = pathlib.Path('//Users/volodymyr.manko/documents/Projects/devices.yaml')
+    file_yaml = pathlib.Path('devices.yaml')
     with file_yaml.open() as stream:
         data_yaml = yaml.safe_load(stream)
 
@@ -40,5 +40,5 @@ if __name__ == '__main__':
     data_yaml['hero-calcium']['lab_env'] = lab11_env_3
     data_yaml['jaws-sand']['lab_env'] = 'None'
 
-    with pathlib.Path('//Users/volodymyr.manko/documents/Projects/devices_new_info.yaml').open('w') as write:
+    with pathlib.Path('devices_new_info.yaml').open('w') as write:
         yaml.safe_dump(data_yaml, write)
