@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 flask = "==3.0.3"
+requests = "*"
 blinker = "==1.7.0"
 click = "==8.1.7"
 importlib-metadata = "==7.1.0"
@@ -13,7 +14,6 @@ jinja2 = "==3.1.3"
 markupsafe = "==2.1.5"
 werkzeug = "==3.0.2"
 zipp = "==3.18.1"
-requests = "*"
 
 [dev-packages]
 
