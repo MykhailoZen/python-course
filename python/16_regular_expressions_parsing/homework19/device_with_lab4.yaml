@@ -1,0 +1,34 @@
+knight-lamar:
+  device_type: cocoa
+  lab_env:
+    wifi: lab11-wifi-2
+    network-emulator: lab11-network-emulator-1
+    shaper: lab11-shaper-1
+    attenuator: lab11-attenuator-1
+    video-env: lab11-video-env-30
+    chamber: 30
+
+goldfish-neutron:
+  device_type: goldfish
+  lab_env:
+    wifi: lab11-wifi-4
+    network-emulator: lab11-network-emulator-3
+    shaper: lab11-shaper-3
+    attenuator: lab11-attenuator-2
+    video-env: lab11-video-env-1
+    chamber: 8
+
+hero-calcium:
+  device_type: smore
+  lab_env:
+    wifi: lab11-wifi-6
+    network-emulator: lab11-network-emulator-5
+    shaper: lab11-shaper-5
+    video-env: lab11-video-env-1
+    chamber: 31
+
+jaws-sand:
+  device_type: jaws
+  lab_env:
+    {}
+
