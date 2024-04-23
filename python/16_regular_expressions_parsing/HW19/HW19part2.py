@@ -1,6 +1,5 @@
 import json
 import os
-
 import yaml
 
 # Make sure that the files are present in script folder
