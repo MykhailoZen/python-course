@@ -4,11 +4,11 @@
 import re
 
 
-def rectangle_area(length, width):
+def rectangle_area(length: float, width: float):
     print("The area of the rectangle = ", length * width)
 
 
-def input_param(name):
+def input_param(name: str) -> float:
     s = input("Enter the " + name + " of the rectangle: ")
     while not(re.match(r'^\d+?\.\d+?$', s) or s.isdigit()):
         print("Incorrect value!")
