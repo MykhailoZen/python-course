@@ -4,15 +4,14 @@
 import re
 
 
-def rectangle_area(length, width):
-    print("The area of the rectangle = ", length * width)
+def rectangle_area(length: float, width: float):
+    print(f"The area of the rectangle = {length * width}")
 
 
-def input_param(name):
-    s = input("Enter the " + name + " of the rectangle: ")
+def input_param(name: str) -> float:
+    s = input(f"Enter the {name}  of the rectangle: ")
     while not(re.match(r'^\d+?\.\d+?$', s) or s.isdigit()):
-        print("Incorrect value!")
-        s = input("Enter the " + name + " of the rectangle: ")
+        s = input(f"Incorrect value! \nEnter the {name} of the rectangle: ")
     else:
         return float(s)
 
