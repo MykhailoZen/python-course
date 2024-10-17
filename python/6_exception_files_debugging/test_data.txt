@@ -1,0 +1,7 @@
+This code intentionally raises a NameError
+with the message “Hi there” using the raise statement within a try block.
+Then, it catches the NameError exception,
+prints “An exception,” and re-raises the same exception using raise.
+This demonstrates how exceptions can be raised and handled in Python,
+allowing for custom error messages and further exception propagation.
+bla-bla
