@@ -3,7 +3,7 @@
 # It should look like this:
 # Sam Harris => S.H
 # patrick feeney => P.F
-def abbrev_name(name):
+def abbrev_name(name: str) -> str:
     return '.'.join([n[0].upper() for n in name.split(' ')])
 
 
