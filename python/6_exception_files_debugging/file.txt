@@ -1,0 +1,5 @@
+From version 3.10 upwards, Python has implemented a switch case feature called “structural pattern matching”. You can implement this feature with the match and case keywords.
+Some people debate whether or not the match and case are keywords in Python. This is because you can use both of them as variable and function names. But that’s another story for another day.
+You can refer to both keywords as "soft keywords" if you like.
+In this article, I will show you how to write a switch statement in Python using the match and case keywords.
+New content to write
