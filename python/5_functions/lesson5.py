@@ -1,6 +1,6 @@
 #1) Create a function without arguments that outputs "Hello World!".
 def my_hello_world():
-    """The hello world function prints Hello World"""
+    """The hello world function prints 'Hello World' """
     print("Hello World!")
 
 '''2) Create a function that calculates the area of a rectangle.
@@ -17,8 +17,6 @@ Solution should include:
 The Python function calculate_rectangle_area with the required functionality and docstring.
 At least three function usage examples demonstrating the use of the function with different inputs and the expected output. '''
 
-
-
 def calculate_rectangle_area(length, width):
     ''' The function returns the rectangle area '''
     if type(length) is str or type(width) is str:
@@ -29,12 +27,9 @@ def calculate_rectangle_area(length, width):
         return length * width
 
 
-
 my_hello_world()
 
 print(calculate_rectangle_area(15.0, -2))
 print(calculate_rectangle_area(0.8, 400))
 print(calculate_rectangle_area(5, 'test'))
 print(calculate_rectangle_area(5, 8))
-
-
