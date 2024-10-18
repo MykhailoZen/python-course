@@ -3,6 +3,9 @@
 #Create a set named numbers with the numbers from 1 to 3.
 #Create a dictionary named person with the following key-value pairs: 'name' and age.
 
+import json
+from pprint import pprint
+
 fruits = ['apple', 'banana', 'cherry', 'potato']
 colors = ('blue', 'red', 'green')
 numbers = {1, 2, 3}
@@ -30,4 +33,4 @@ print(numbers)
 
 #Create a new key-value pair in the person dictionary (with new 'name' and age).
 person.update({"Denys2": 88})
-print(person)
+print(json.dumps(person, indent=4, sort_keys=True))
