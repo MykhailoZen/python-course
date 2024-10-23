@@ -2,8 +2,7 @@ fruits = ['apple', 'banana', 'cherry', 'potato']
 colours = ('black', 'blue', 'yellow')
 numbers = {1, 2, 3}
 person= {
-    "name": "Dmytro",
-    "age": 32
+    "Dmytro" : 32
 }
 #Actions for fruits
 fruits.append("grape")
@@ -18,6 +17,5 @@ numbers.add(4)
 print(numbers)
 
 #Actions for person
-person["name1"] = "Ihor"
-person["age1"] = 28
+person.update({"Daria": 35})
 print(person)
