@@ -1,3 +1,5 @@
-def area(length, width):
+def area(length: int, width: int) -> int:
     return length * width
-print(area(10, 11))
+
+
+print(f"The area of rectangle is: {area(10, 11)}")
