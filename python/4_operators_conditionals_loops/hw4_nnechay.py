@@ -14,32 +14,24 @@ student_grades = {'Alan': 68,
                   'Kevin': 34,
                   'Michael': 31,
                   'Richard': 12
-}
+                  }
 
-
-# Discription of the program and list of names of the students to make it easier to select correct or incorrect name
 print('You can find the students points for the following students:')
 for x in student_grades:
     print(x)
 
-# Reading the value of student name or the Stop command
 student_name = input('Enter the name of a student or enter "Stop the program": ')
-
-
-# The main part of the script.
-# User can one by one enter the student names until correct name from the database is appeared.
-# In this case the student point appears in the output
-# If user want to stop the script, he can do it by entering of 'Stop the program' command instead of entering the name
 
 if student_name != 'Stop the program':
     while student_name not in student_grades:
         if student_name != 'Stop the program':
-            print('There is no', student_name, 'in the school')
+            print(f'There is no {student_name} in the school')
             student_name = input('Please enter another name or enter "Stop the program": ')
         else:
             print('You stopped the program')
             break
     else:
-        print('Student', student_name, 'has', student_grades[student_name], 'points')
+        print(f'Student {student_name} has {student_grades[student_name]} points')
 else:
     print('You stopped the program')
+   
