@@ -3,15 +3,21 @@ from tkinter.font import names
 
 # 1) Create the class "Zoo" with a protected list named "animals"
 class Zoo:
-    def __init__(self, animals):
-        self.animals = []
+    def __init__(self):
+        self._animals = []
 
     # 2) Add methods for adding and removing elements from the list.
+
+    def get_animals(self):
+        return [str(animal) for animal in self._animals]
+
     def add_animal(self, animal):
-        self.animals.append(animal)
+        self._animals.append(animal)
 
     def remove_animal(self, animal):
-        self.animals.remove(animal)
+        self._animals.remove(animal)
+
+
 
 # 3) Create classes for Wolf, Lion, Bison, Parrot, and Goose
 # a) Each class should have fields: name(str), id(int) and constructor.
@@ -34,6 +40,10 @@ class Wolf:
 
 wolf = Wolf("Alex", 2)
 print(wolf)
+print(wolf.play_sound())
+zoo = Zoo()
+zoo.add_animal(wolf)
+print(zoo.get_animals())
 
 
 class Lion:
