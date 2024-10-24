@@ -22,7 +22,9 @@ def file_function(file_operation: str, file_path: str, content: str = "") -> Non
                     print('This operation is not supported.')
         f.close()
     except FileNotFoundError:
-        print('Incorrect file path. Please type again.')
+        print('Incorrect file path.')
+    except UnicodeDecodeError:
+        print('Incorrect file type.')
     except Exception as e:
         print(e)
 
@@ -30,3 +32,7 @@ def file_function(file_operation: str, file_path: str, content: str = "") -> Non
 if __name__ == '__main__':
     file_function('read', 'file.txt')
     file_function('write', 'file.txt', 'New content to write\n')
+
+    file_function('get', 'my.png')
+    file_function('read', 'my.png')
+    file_function('read', 'test.txt')
