@@ -20,7 +20,6 @@ def file_function(file_operation: str, file_path: str, content: str = "") -> Non
                     print(f.read())
                 case _:
                     print('This operation is not supported.')
-        f.close()
     except FileNotFoundError:
         print('Incorrect file path.')
     except UnicodeDecodeError:
