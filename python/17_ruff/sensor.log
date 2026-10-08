@@ -1,0 +1,8 @@
+2026-10-08 23:12:51 | CRITICAL | Critical temperature: 47
+2026-10-08 23:12:59 | WARNING  | High temperature: 40
+2026-10-08 23:12:59 | ERROR    | Sensor stopped by user
+Traceback (most recent call last):
+  File "/Users/vasyl.kotiai/Documents/python_course/python-course/python/17_ruff/sensor_bonus.py", line 56, in run_sensor
+    time.sleep(interval)
+    ~~~~~~~~~~^^^^^^^^^^
+KeyboardInterrupt
